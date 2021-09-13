@@ -1,0 +1,4 @@
+repository "FS2@YFM@cloud"
+  path "/"
+    br "/main"
+    co "/main"
