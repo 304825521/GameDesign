@@ -56,3 +56,6 @@ TagManager:
   - name: world
     uniqueID: 286763239
     locked: 0
+  - name: battle
+    uniqueID: 4051241193
+    locked: 0
