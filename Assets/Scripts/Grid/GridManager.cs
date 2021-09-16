@@ -30,7 +30,6 @@ namespace FS2.Grid
             GridDictionarys = new Dictionary<string, GameObject>();
             //TODO:将来要从别的地方读取不同的地图的GridManager的tranform该给CreateGrid
             CreateGrid();
-
         }
 
 
@@ -89,6 +88,9 @@ namespace FS2.Grid
             }
         }
         #endregion
+
+     
+
     }
 
 }
