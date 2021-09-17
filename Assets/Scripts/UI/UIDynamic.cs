@@ -27,4 +27,13 @@ public class UIDynamic : UIBehaviour
         }
         return this.animator == null || !this.animator.isActiveAndEnabled || this.animator.runtimeAnimatorController == null || parameter.IsNullOrEmpty();
     }
+
+    public void SetTrigger(string parameter)
+    {
+        if (this.IsLoseSomething(parameter))
+        {
+            return;
+        }
+        this.animator.SetTrigger(parameter);
+    }
 }

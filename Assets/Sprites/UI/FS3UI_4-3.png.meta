@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: a5d6c940dd6784446a425c53e88e0f52
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2880046827930159781
+    second: FS3UI_4-3_0
+  - first:
+      213: 6974026574387113589
+    second: FS3UI_4-3_1
+  - first:
+      213: 7836276728103224042
+    second: FS3UI_4-3_2
+  - first:
+      213: 3429217922468740908
+    second: FS3UI_4-3_3
+  - first:
+      213: 4574206122539733390
+    second: FS3UI_4-3_4
+  - first:
+      213: 8156137078095065785
+    second: FS3UI_4-3_5
+  - first:
+      213: -2618066902149203321
+    second: FS3UI_4-3_6
+  - first:
+      213: 8111726581520261092
+    second: FS3UI_4-3_7
+  - first:
+      213: -5547612867646379051
+    second: FS3UI_4-3_8
+  - first:
+      213: 8802575482757318937
+    second: FS3UI_4-3_9
+  - first:
+      213: 6484299984559620300
+    second: FS3UI_4-3_10
+  - first:
+      213: -5890297604918765359
+    second: FS3UI_4-3_11
+  - first:
+      213: -2590785073781102485
+    second: FS3UI_4-3_12
+  - first:
+      213: -7507826606516308230
+    second: FS3UI_4-3_13
+  - first:
+      213: 1499264662462687983
+    second: FS3UI_4-3_14
+  - first:
+      213: 5185845618730848250
+    second: FS3UI_4-3_15
+  - first:
+      213: 4779409967356354577
+    second: FS3UI_4-3_16
+  - first:
+      213: -2928480375881657712
+    second: FS3UI_4-3_17
+  - first:
+      213: 55065825433447656
+    second: FS3UI_4-3_18
+  - first:
+      213: -529722293350136027
+    second: FS3UI_4-3_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FS3UI_4-3_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 125
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa8443b45bf7f720800000000000000
+      internalID: 2880046827930159781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 125
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e6a7c2838b8c060800000000000000
+      internalID: 6974026574387113589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 115
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2c0447a2c00cc60800000000000000
+      internalID: 7836276728103224042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 115
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ff62e1887079f20800000000000000
+      internalID: 3429217922468740908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_4
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 125
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81d567bb38da7f30800000000000000
+      internalID: 4574206122539733390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 125
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2bf3f957b603170800000000000000
+      internalID: 8156137078095065785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 115
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a703b0602caabd0800000000000000
+      internalID: -2618066902149203321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_7
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 115
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efdb9e1954a29070800000000000000
+      internalID: 8111726581520261092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db2d884d7be203b0800000000000000
+      internalID: -5547612867646379051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_9
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 65
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919005673c7092a70800000000000000
+      internalID: 8802575482757318937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 55
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc04fbc0b7cdcf950800000000000000
+      internalID: 6484299984559620300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 55
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d89b755985714ea0800000000000000
+      internalID: -5890297604918765359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_12
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 65
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68a4e3b3beab0cd0800000000000000
+      internalID: -2590785073781102485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_13
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 65
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af67e53ca77dec790800000000000000
+      internalID: -7507826606516308230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_14
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 55
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea626e54457ec410800000000000000
+      internalID: 1499264662462687983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_15
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 55
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affc77c4d13d7f740800000000000000
+      internalID: 5185845618730848250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110ac3cfa00e35240800000000000000
+      internalID: 4779409967356354577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_17
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 5
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0921fd72d92fb57d0800000000000000
+      internalID: -2928480375881657712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_18
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec69349312a3c000800000000000000
+      internalID: 55065825433447656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FS3UI_4-3_19
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527824b716c06a8f0800000000000000
+      internalID: -529722293350136027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

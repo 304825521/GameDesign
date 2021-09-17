@@ -1,24 +1,47 @@
-﻿<Properties StartupConfiguration="{35ED8E3A-0675-8404-A801-8970DF3D0A35}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Grid/GridManager.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Timeline/Behaviour/DialogBehaviour.cs">
     <Files>
-      <File FileName="Assets/Scripts/Grid/GridManager.cs" Line="29" Column="13" />
-      <File FileName="Assets/Scripts/UI/UIDynamic.cs" Line="11" Column="31" />
-      <File FileName="Assets/Scripts/Extensions/Extensions.cs" Line="17" Column="1" />
-      <File FileName="Assets/Scripts/Grid/Grid.cs" Line="49" Column="1" />
-      <File FileName="Assets/Scripts/Data/MapData.cs" Line="14" Column="15" />
-      <File FileName="Assets/Resources/Data/XML/MapData.xml" Line="4" Column="26" />
+      <File FileName="Assets/Scripts/Game.cs" />
+      <File FileName="Assets/Scripts/GlobalBindingModule.cs" />
+      <File FileName="Assets/Scripts/Battle/BattleManager.cs" />
+      <File FileName="Assets/Scripts/UI/UIBattle.cs" />
+      <File FileName="Assets/Scripts/UI/UIForm.cs" />
+      <File FileName="Assets/Scripts/UI/CtrlForm.cs" />
+      <File FileName="Assets/Scripts/UI/CtrlBattle.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI/UIBattleStatus.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI/UICombat.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI/UIChoice.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI/ActionButtons.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/Grid/Grid.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI/UIDynamic.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/Grid/GridManager.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI/WGBtn.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FS2" expanded="True" selected="True" />
+          <Node name="FS2" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Manager" expanded="True" />
+                  <Node name="UI" expanded="True" />
+                </Node>
+                <Node name="Timeline" expanded="True">
+                  <Node name="Behaviour" expanded="True">
+                    <Node name="DialogBehaviour.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="df36b2dd-7c70-457e-a347-fb6caad7f52f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4200e4b6-eec5-4d83-80bc-2ad11f9a6fc1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

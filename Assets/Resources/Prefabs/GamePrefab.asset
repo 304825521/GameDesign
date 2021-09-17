@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a360986d68b38438402dad268fb1ab, type: 3}
+  m_Name: GamePrefab
+  m_EditorClassIdentifier: 
+  EnterCombatBtn: {fileID: 7836276728103224042, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  NormalCombatBtn: {fileID: 2880046827930159781, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  ClickCombatBtn: {fileID: 3429217922468740908, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  BanCombatBtn: {fileID: 6974026574387113589, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  EnterAttactBtn: {fileID: 55065825433447656, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  NormalAttactBtn: {fileID: 4779409967356354577, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  ClickAttactBtn: {fileID: -529722293350136027, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  BanAttackBtn: {fileID: -2928480375881657712, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  EnterRunBtn: {fileID: -2618066902149203321, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  NormalRunBtn: {fileID: 4574206122539733390, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  ClickRunBtn: {fileID: 8111726581520261092, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  BanRunBtn: {fileID: 8156137078095065785, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  EnterToolsBtn: {fileID: 1499264662462687983, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  NormalToolsBtn: {fileID: -2590785073781102485, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  ClickToolsBtn: {fileID: 5185845618730848250, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  BanToolsBtn: {fileID: -7507826606516308230, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  EnterAutoBtn: {fileID: 6484299984559620300, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  NormalAutoBtn: {fileID: -5547612867646379051, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  ClickAutoBtn: {fileID: -5890297604918765359, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}
+  BanAutoBtn: {fileID: 8802575482757318937, guid: a5d6c940dd6784446a425c53e88e0f52,
+    type: 3}

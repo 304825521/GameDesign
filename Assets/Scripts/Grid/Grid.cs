@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Grid : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
+public class Grid : MonoBehaviour
 {
     //是否该位置上为空
     bool isEmpty = false;
@@ -11,9 +11,12 @@ public class Grid : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
     bool isAction;
     //是否需要展示出来grid
     bool isShow;
+    //动画组件
+    public UIDynamic UIDynamic;
+    //是否可以开始鼠标经过的逻辑
+    bool canOver = false;
 
-
-
+    public bool CanOver { get => canOver; set => canOver = value; }
     public bool IsEmpty { get => isEmpty; set => isEmpty = value; }
     public bool IsAction { get => isAction; set => isAction = value; }
     public bool IsShow
@@ -33,16 +36,37 @@ public class Grid : MonoBehaviour, IPointerEnterHandler,IPointerClickHandler
         }
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    
+
+    private void OnMouseEnter()
+	{
+        //if(...)
+        if (CanOver == false) return;
+        
+        UIDynamic.Play("AttackGrid");
+	}
+
+    private void OnMouseExit()
     {
-        //TODO:目前需求是获取此格子上的信息
-        Debug.Log(this.isEmpty);
+        if (CanOver == false) return;
+        UIDynamic.SetTrigger("Normal");
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    private void OnMouseDown()
     {
-        //TODO:必须要在玩家选了攻击或者选了技能的情况适用
-        //if(...)
-        Debug.Log("Enter the Grid");
+        //TODO:当点下去后执行各自操作或许，需要一个变量确定
+        //当前是攻击，道具还是技能攻击的鼠标点击
     }
+
+
+    //TODO：只是为了测试，后面删除
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            CanOver = true;
+        }
+    }
+
+
 }
