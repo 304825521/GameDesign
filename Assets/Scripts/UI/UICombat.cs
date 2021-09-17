@@ -1,27 +1,36 @@
-﻿using UnityEngine.EventSystems;
+﻿using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
 namespace FS2.UI
 {
-    public class UICombat : UIForm, IPointerEnterHandler,IPointerExitHandler,IPointerClickHandler
+    public class UICombat : UIForm
     {
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            //TODO:解决排版问题然后才能开始这里的逻辑
-        }
+		public Action Back;
+		public GameObject Base;
 
-        /// <summary>
-        /// 经过技能的时候的逻辑
-        /// </summary>
-        /// <param name="eventData"></param>
-        public void OnPointerEnter(PointerEventData eventData)
-        {
-            //TODO:解决排版问题然后才能开始这里的逻辑
-        }
+		public override void Show()
+		{
+			base.Show();
+			Base.SetActive(true);
+			
+		}
+		protected override void OnEnable()
+		{
+			GameManager.Status = GameManager.GameStatus.OnSkillPannel;
+		}
+		private void Update()
+		{
+			if(GameManager.Status == GameManager.GameStatus.OnSkillPannel)
+			{
+				if(Input.GetMouseButtonDown(1))
+				{
+					this.Hide();
+					Back?.Invoke();
+					GameManager.Status = GameManager.GameStatus.Normal;
+				}
+			}
+		}
 
-        public void OnPointerExit(PointerEventData eventData)
-        {
-            //TODO:解决排版问题然后才能开始这里的逻辑
-        }
-
-        public 
-    }
+		
+	}
 }

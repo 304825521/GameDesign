@@ -1,23 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace FS2.UI
 {
-	public class ActionButtons : UIWidget, IPointerClickHandler,IPointerEnterHandler,IPointerExitHandler
+	public class ActionButtons : WGBtn
 	{
-		public class EventTriggerButton : EventTrigger
+		public override void OnPointerClick(PointerEventData eventData)
 		{
-			//TODO:回去看看如何触发的
-		}
-
-		public EventTriggerButton Click;
-		public void OnPointerClick(PointerEventData eventData)
-		{
-
-			if (Cursor.visible)
+			PointerClick?.Invoke(eventData);
+/*			if (Cursor.visible)
 			{
 				Sprite sprite = null;
 				string name = "Click" + this.gameObject.name;
@@ -43,31 +39,13 @@ namespace FS2.UI
 				}
 				this.gameObject.GetComponent<Image>().sprite = sprite;
 				this.gameObject.GetComponent<Image>().SetNativeSize();
-				switch (name)
-				{
-					case "ClickCombatBtn":
-						
-						break;
-					case "ClickAttackBtn":
-						sprite = GameManager.GamePrefab.ClickAttactBtn;
-						break;
-					case "ClickAutoBtn":
-						sprite = GameManager.GamePrefab.ClickAutoBtn;
-						break;
-					case "ClickRunBtn":
-						sprite = GameManager.GamePrefab.ClickRunBtn;
-						break;
-					case "ClickToolsBtn":
-						sprite = GameManager.GamePrefab.ClickToolsBtn;
-						break;
-					default:
-						break;
-				}
+				PointerClick?.Invoke(eventData);
 
-			}	
+
+			}*/
 		}
 
-		public void OnPointerEnter(PointerEventData eventData)
+		public override void OnPointerEnter(PointerEventData eventData)
 		{
 			if (Cursor.visible)
 			{
@@ -98,7 +76,7 @@ namespace FS2.UI
 			}
 		}
 
-		public void OnPointerExit(PointerEventData eventData)
+		public override void OnPointerExit(PointerEventData eventData)
 		{
 			if (Cursor.visible)
 			{

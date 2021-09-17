@@ -9,9 +9,9 @@ namespace FS2
 	{
 		public override void Load()
 		{
-
+			Bind<DialogManager>().ToSelf().InSingletonScope();
 			Bind<UIManager>().ToSelf().InSingletonScope();
-
+			Bind<AudioPlayer>().ToSelf().InSingletonScope();
 		}
 
 	}
