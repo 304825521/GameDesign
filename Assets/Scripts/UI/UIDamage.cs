@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+
 namespace FS2.UI
 {
 	public class UIDamage : UIForm
@@ -10,9 +11,13 @@ namespace FS2.UI
 		public GameObject First;
 		public GameObject Second;
 		public GameObject Third;
+
+		public float ExistTime = 3f;
+
+		public Rigidbody2D Rigidbody2D;
 		public override void Show()
 		{
-			
+
 			base.Show();
 		}
 
@@ -54,6 +59,10 @@ namespace FS2.UI
 						ThirdSprite = GameManager.GamePrefab.FN09;
 						break;
 				}
+				Third.GetComponent<Image>().sprite = ThirdSprite;
+				Third.SetActive(true);
+				Vector3 target = new Vector3(this.transform.position.x - 150f, this.transform.position.y + 100f);
+				this.transform.DOJump(target, 2, 1, 3f);
 			}
 
 			else if (first == -1 && second != -1 && third != -1)
@@ -127,12 +136,13 @@ namespace FS2.UI
 						SecondSprite = GameManager.GamePrefab.FN09;
 						break;
 				}
-		/*		ThirdNum.GetComponent<Image>().sprite = ThirdSprite;
-				SecondNum.GetComponent<Image>().sprite = SecondSprite;
-				ThirdNum.SetActive(true);
-				SecondNum.SetActive(true);*/
+                	Third.GetComponent<Image>().sprite = ThirdSprite;
+                        Second.GetComponent<Image>().sprite = SecondSprite;
+                        Third.SetActive(true);
+                        Second.SetActive(true);
+				Rigidbody2D.AddForce(new Vector2(-0.5f, 2f));
 			}
-			else if (first != -1 && second != -1 && third != -1)
+            else if (first != -1 && second != -1 && third != -1)
 			{
 				Sprite ThirdSprite = null;
 				Sprite SecondSprite = null;
@@ -237,14 +247,277 @@ namespace FS2.UI
 						FirstSprite = GameManager.GamePrefab.FN09;
 						break;
 				}
-	/*			ThirdNum.GetComponent<Image>().sprite = ThirdSprite;
-				SecondNum.GetComponent<Image>().sprite = SecondSprite;
-				FirstNum.GetComponent<Image>().sprite = SecondSprite;
-				ThirdNum.SetActive(true);
-				SecondNum.SetActive(true);
-				FirstNum.SetActive(true);*/
+				Third.GetComponent<Image>().sprite = ThirdSprite;
+				Second.GetComponent<Image>().sprite = SecondSprite;
+				First.GetComponent<Image>().sprite = SecondSprite;
+				Third.SetActive(true);
+				Second.SetActive(true);
+				First.SetActive(true);
+				Rigidbody2D.AddForce(new Vector2(-0.5f, 2f));
 			}
 		}
 
+		public void SetDamageNumberByChars(char[] vs)
+        {
+			if(vs.Length == 1)
+            {
+                Sprite ThirdSprite = null;
+                switch (vs[0])
+                {
+					case '0':
+						ThirdSprite = GameManager.GamePrefab.FN00;
+						break;
+					case '1':
+						ThirdSprite = GameManager.GamePrefab.FN01;
+						break;
+					case '2':
+						ThirdSprite = GameManager.GamePrefab.FN02;
+						break;
+					case '3':
+						ThirdSprite = GameManager.GamePrefab.FN03;
+						break;
+					case '4':
+						ThirdSprite = GameManager.GamePrefab.FN04;
+						break;
+					case '5':
+						ThirdSprite = GameManager.GamePrefab.FN05;
+						break;
+					case '6':
+						ThirdSprite = GameManager.GamePrefab.FN06;
+						break;
+					case '7':
+						ThirdSprite = GameManager.GamePrefab.FN07;
+						break;
+					case '8':
+						ThirdSprite = GameManager.GamePrefab.FN08;
+						break;
+					case '9':
+						ThirdSprite = GameManager.GamePrefab.FN09;
+						break;
+				}
+                Third.GetComponent<Image>().sprite = ThirdSprite;
+                Third.SetActive(true);
+                JumpAnim();
+            }
+            else if (vs.Length==2)
+			{
+				Sprite ThirdSprite = null;
+				Sprite SecondSprite = null;
+
+				switch (vs[1])
+				{
+					case '0':
+						ThirdSprite = GameManager.GamePrefab.FN00;
+						break;
+					case '1':
+						ThirdSprite = GameManager.GamePrefab.FN01;
+						break;
+					case '2':
+						ThirdSprite = GameManager.GamePrefab.FN02;
+						break;
+					case '3':
+						ThirdSprite = GameManager.GamePrefab.FN03;
+						break;
+					case '4':
+						ThirdSprite = GameManager.GamePrefab.FN04;
+						break;
+					case '5':
+						ThirdSprite = GameManager.GamePrefab.FN05;
+						break;
+					case '6':
+						ThirdSprite = GameManager.GamePrefab.FN06;
+						break;
+					case '7':
+						ThirdSprite = GameManager.GamePrefab.FN07;
+						break;
+					case '8':
+						ThirdSprite = GameManager.GamePrefab.FN08;
+						break;
+					case '9':
+						ThirdSprite = GameManager.GamePrefab.FN09;
+						break;
+
+				}
+				switch (vs[0])
+				{
+
+					case '0':
+						SecondSprite = GameManager.GamePrefab.FN00;
+						break;
+					case '1':
+						SecondSprite = GameManager.GamePrefab.FN01;
+						break;
+					case '2':
+						SecondSprite = GameManager.GamePrefab.FN02;
+						break;
+					case '3':
+						SecondSprite = GameManager.GamePrefab.FN03;
+						break;
+					case '4':
+						SecondSprite = GameManager.GamePrefab.FN04;
+						break;
+					case '5':
+						SecondSprite = GameManager.GamePrefab.FN05;
+						break;
+					case '6':
+						SecondSprite = GameManager.GamePrefab.FN06;
+						break;
+					case '7':
+						SecondSprite = GameManager.GamePrefab.FN07;
+						break;
+					case '8':
+						SecondSprite = GameManager.GamePrefab.FN08;
+						break;
+					case '9':
+						SecondSprite = GameManager.GamePrefab.FN09;
+						break;
+				}
+				Third.GetComponent<Image>().sprite = ThirdSprite;
+				Second.GetComponent<Image>().sprite = SecondSprite;
+				Third.SetActive(true);
+				Second.SetActive(true);
+				JumpAnim();
+			}
+			else if (vs.Length==3)
+			{
+				Sprite ThirdSprite = null;
+				Sprite SecondSprite = null;
+				Sprite FirstSprite = null;
+				switch (vs[3])
+				{
+					case '0':
+						ThirdSprite = GameManager.GamePrefab.FN00;
+						break;
+					case '1':
+						ThirdSprite = GameManager.GamePrefab.FN01;
+						break;
+					case '2':
+						ThirdSprite = GameManager.GamePrefab.FN02;
+						break;
+					case '3':
+						ThirdSprite = GameManager.GamePrefab.FN03;
+						break;
+					case '4':
+						ThirdSprite = GameManager.GamePrefab.FN04;
+						break;
+					case '5':
+						ThirdSprite = GameManager.GamePrefab.FN05;
+						break;
+					case '6':
+						ThirdSprite = GameManager.GamePrefab.FN06;
+						break;
+					case '7':
+						ThirdSprite = GameManager.GamePrefab.FN07;
+						break;
+					case '8':
+						ThirdSprite = GameManager.GamePrefab.FN08;
+						break;
+					case '9':
+						ThirdSprite = GameManager.GamePrefab.FN09;
+						break;
+				}
+				switch (vs[2])
+				{
+					case '0':
+						SecondSprite = GameManager.GamePrefab.FN00;
+						break;
+					case '1':
+						SecondSprite = GameManager.GamePrefab.FN01;
+						break;
+					case '2':
+						SecondSprite = GameManager.GamePrefab.FN02;
+						break;
+					case '3':
+						SecondSprite = GameManager.GamePrefab.FN03;
+						break;
+					case '4':
+						SecondSprite = GameManager.GamePrefab.FN04;
+						break;
+					case '5':
+						SecondSprite = GameManager.GamePrefab.FN05;
+						break;
+					case '6':
+						SecondSprite = GameManager.GamePrefab.FN06;
+						break;
+					case '7':
+						SecondSprite = GameManager.GamePrefab.FN07;
+						break;
+					case '8':
+						SecondSprite = GameManager.GamePrefab.FN08;
+						break;
+					case '9':
+						SecondSprite = GameManager.GamePrefab.FN09;
+						break;
+				}
+
+				switch (vs[0])
+				{
+					case '0':
+						FirstSprite = GameManager.GamePrefab.FN00;
+						break;
+					case '1':
+						FirstSprite = GameManager.GamePrefab.FN01;
+						break;
+					case '2':
+						FirstSprite = GameManager.GamePrefab.FN02;
+						break;
+					case '3':
+						FirstSprite = GameManager.GamePrefab.FN03;
+						break;
+					case '4':
+						FirstSprite = GameManager.GamePrefab.FN04;
+						break;
+					case '5':
+						FirstSprite = GameManager.GamePrefab.FN05;
+						break;
+					case '6':
+						FirstSprite = GameManager.GamePrefab.FN06;
+						break;
+					case '7':
+						FirstSprite = GameManager.GamePrefab.FN07;
+						break;
+					case '8':
+						FirstSprite = GameManager.GamePrefab.FN08;
+						break;
+					case '9':
+						FirstSprite = GameManager.GamePrefab.FN09;
+						break;
+				}
+				Third.GetComponent<Image>().sprite = ThirdSprite;
+				Second.GetComponent<Image>().sprite = SecondSprite;
+				First.GetComponent<Image>().sprite = SecondSprite;
+				Third.SetActive(true);
+				Second.SetActive(true);
+				First.SetActive(true);
+				JumpAnim();
+			}
+
+		}
+
+        private void JumpAnim()
+        {
+            Vector3 target = new Vector3(this.transform.position.x - 150f, this.transform.position.y + 100f);
+			this.transform.DOJump(target, 2, 1, 3f)
+				.OnComplete(() => {
+					this.Hide();
+				});
+        }
+
+        public void SetParent(Transform transform)
+        {
+			this.transform.SetParent(transform);
+			this.gameObject.transform.localPosition = Vector3.zero;
+        }
+
+		IEnumerator IJumpDamage()
+        {
+			float count = 0;
+            while (true)
+            {
+				
+				count += 0.2f;
+				yield return new WaitForSeconds(0.2f);
+            }
+        }
 	}
 }

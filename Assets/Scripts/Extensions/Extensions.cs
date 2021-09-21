@@ -40,5 +40,10 @@ namespace FS2.Utility
 			string temp = _num.ToString();
 			return temp.ToCharArray();
 		}
+
+		public static int GetCharsLength(char[] temp)
+        {
+			return temp.Length;
+        }
 	}
 }

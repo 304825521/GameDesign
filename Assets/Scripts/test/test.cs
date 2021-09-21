@@ -21,5 +21,12 @@ public class test : MonoBehaviour
 
 		}
 
+		if (Input.GetKeyDown(KeyCode.Q))
+		{
+			UIDamage uIBattle = Game.UI.Open<UIDamage>();
+			uIBattle.SetDamageNumber(8);
+
+		}
+
 	}
 }

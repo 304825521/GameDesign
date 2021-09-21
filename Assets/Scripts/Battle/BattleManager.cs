@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
 using FS2.UI;
-using FS2;
+using FS2.Utility;
 using FS2.Grid;
 using FS2.Data;
 using System;
@@ -134,10 +134,17 @@ namespace FS2.FSM.Battle{
 		private void HurtManager(Unit Attacker,Unit Defender)
 		{
 			float damage = Attacker.CharacterData.CurrentAttack - Defender.CharacterData.CurrentDefence;
-			float realDamage = UnityEngine.Random.Range(damage - 3f, damage + 3f);
+			int realDamage = (int)UnityEngine.Random.Range(damage - 3f, damage + 3f);
+            //eGetChars(realDamage);
+
+            char[] vs = Extensions.GetChars(realDamage);
+			UIDamage uIDamage = Game.UI.Open<UIDamage>();
+			uIDamage.SetDamageNumberByChars(vs);
+			uIDamage.SetParent(Defender.transform);
 			Defender.CharacterData.CurrentHp -= (int)realDamage;
 			Defender.UIDynamic.Play("GetHurt");
-			UIDamage uIDamage = Game.UI.Open<UIDamage>();
+			//TODO:人物收到伤害后飘动文字(21/9/2021)
+			
 		}
 
 		public Unit GetPlayer()
