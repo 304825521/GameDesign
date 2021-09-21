@@ -1,4 +1,5 @@
 ﻿
+using FS2.Manager;
 using UnityEngine;
 using UnityEngine.Playables;
 namespace FSGame.Manager.Bik
@@ -9,20 +10,14 @@ namespace FSGame.Manager.Bik
 		{
 			StartBikMusic("018music");
 		}
-		public void StartBikMusic(string name)
+
+		public void Event02()
 		{
-			AudioClip clip = Resources.Load<AudioClip>("Audio/Music/" + name);
-			AudioSource = GameObject.Find("Audio Source").GetComponent<AudioSource>();
-			AudioSource.clip = clip;
-			AudioSource.loop = true;
-			AudioSource.Play();
+			StopBikMusic();
+			BikManager.Instsance.PlayBik("Bik02");
 		}
 
-		public void StopBikMusic()
-		{
-			AudioSource = GameObject.Find("Audio Source").GetComponent<AudioSource>();
-			AudioSource.Stop();
-		}
+
 
 
 

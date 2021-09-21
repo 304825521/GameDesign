@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using FS2;
-using FS2.Manager;s
+using FS2.Manager;
 using FS2.Data;
 using FS2.UI;
 [System.Serializable]
@@ -16,8 +16,8 @@ public class DialogBehaviour : PlayableBehaviour
 	public string[] names;
 	[TextArea(1,3)]
 	public string[] dialogueLines;
-	public bool haveSprite = true;
-	public bool isLeft = true;
+	public bool[] haveSprite;
+	public bool[] isLeft;
 	public int size;
 
 	private PlayableDirector PlayableDirector;

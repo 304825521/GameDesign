@@ -32,5 +32,16 @@ public class GamePrefab : ScriptableObject
 	public Sprite BanAutoBtn;
 	#endregion
 
-
+	#region FLOATNUMBER
+	public Sprite FN01;
+	public Sprite FN02;
+	public Sprite FN03;
+	public Sprite FN04;
+	public Sprite FN05;
+	public Sprite FN06;
+	public Sprite FN07;
+	public Sprite FN08;
+	public Sprite FN09;
+	public Sprite FN00;
+	#endregion
 }

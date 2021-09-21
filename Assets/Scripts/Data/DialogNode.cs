@@ -10,11 +10,11 @@ namespace FS2.Data
 		public Sprite[] protaits;
 		public string[] names;
 		public string[] dialogueLines;
-		public bool haveSprite;
-		public bool isLeft;
+		public bool[] haveSprite;
+		public bool[] isLeft;
 		public int size;
 
-		public DialogNode(Sprite[] protaits, string[] names, string[] dialogueLines, bool haveSprite, bool isLeft, int size)
+		public DialogNode(Sprite[] protaits, string[] names, string[] dialogueLines, bool[] haveSprite, bool[] isLeft, int size)
 		{
 			this.protaits = protaits;
 			this.names = names;

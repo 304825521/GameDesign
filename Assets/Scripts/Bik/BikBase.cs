@@ -19,5 +19,20 @@ namespace FSGame.Manager.Bik
 			PlayableDirector = GetComponent<PlayableDirector>();
 			BikManager.Instsance.InitBik(VideoPlayer, PlayableDirector);
 		}
+
+		protected virtual void StartBikMusic(string name)
+		{
+			AudioClip clip = Resources.Load<AudioClip>("Audio/Music/" + name);
+			AudioSource = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+			AudioSource.clip = clip;
+			AudioSource.loop = true;
+			AudioSource.Play();
+		}
+
+		protected virtual void StopBikMusic()
+		{
+			AudioSource = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+			AudioSource.Stop();
+		}
 	}
 }

@@ -40,15 +40,14 @@ public class Grid : MonoBehaviour
 
     private void OnMouseEnter()
 	{
-        //if(...)
-        if (CanOver == false) return;
-        
+        //TODO:将来写攻击逻辑的时候加回去
+        //if (CanOver == false) return;   
         UIDynamic.Play("AttackGrid");
 	}
 
     private void OnMouseExit()
     {
-        if (CanOver == false) return;
+        //if (CanOver == false) return;
         UIDynamic.SetTrigger("Normal");
     }
 

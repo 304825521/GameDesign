@@ -11,6 +11,8 @@ namespace FS2.FSM.Battle
         UICombat UICombat;
         UIChoice UIChoice;
 
+
+
 		private void OnEnable()
 		{
             
@@ -59,8 +61,8 @@ namespace FS2.FSM.Battle
 
         public void OnAttackClick()
         {
-            //TODO:普通攻击的逻辑
-            
+            //TODO:普通攻击的逻辑(未完善)
+            BattleManager.Instsance.NormalAttackEnemy();
         }
 
         public void OnDefendClick()
@@ -88,6 +90,8 @@ namespace FS2.FSM.Battle
 
  
         #endregion
+
+ 
     }
 
 }

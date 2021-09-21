@@ -12,7 +12,10 @@ namespace FS2.UI
 		{
 			base.Show();
 			Base.SetActive(true);
-			
+			//TODO:
+			InitCombatData();
+
+
 		}
 		protected override void OnEnable()
 		{
@@ -29,6 +32,11 @@ namespace FS2.UI
 					GameManager.Status = GameManager.GameStatus.Normal;
 				}
 			}
+		}
+
+		public void InitCombatData()
+		{
+
 		}
 
 		

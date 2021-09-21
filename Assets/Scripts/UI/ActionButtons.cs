@@ -12,8 +12,8 @@ namespace FS2.UI
 	{
 		public override void OnPointerClick(PointerEventData eventData)
 		{
-			PointerClick?.Invoke(eventData);
-/*			if (Cursor.visible)
+			//PointerClick?.Invoke(eventData);
+			if (Cursor.visible)
 			{
 				Sprite sprite = null;
 				string name = "Click" + this.gameObject.name;
@@ -40,40 +40,36 @@ namespace FS2.UI
 				this.gameObject.GetComponent<Image>().sprite = sprite;
 				this.gameObject.GetComponent<Image>().SetNativeSize();
 				PointerClick?.Invoke(eventData);
-
-
-			}*/
+			}
 		}
+
 
 		public override void OnPointerEnter(PointerEventData eventData)
 		{
-			if (Cursor.visible)
+			Sprite sprite = null;
+			string name = "Enter" + this.gameObject.name;
+			switch (name)
 			{
-				Sprite sprite = null;
-				string name = "Enter" + this.gameObject.name;
-				switch (name)
-				{
-					case "EnterCombatBtn":
-						sprite = GameManager.GamePrefab.EnterCombatBtn;
-						break;
-					case "EnterAttackBtn":
-						sprite = GameManager.GamePrefab.EnterAttactBtn;
-						break;
-					case "EnterAutoBtn":
-						sprite = GameManager.GamePrefab.EnterAutoBtn;
-						break;
-					case "EnterRunBtn":
-						sprite = GameManager.GamePrefab.EnterRunBtn;
-						break;
-					case "EnterToolsBtn":
-						sprite = GameManager.GamePrefab.EnterToolsBtn;
-						break;
-					default:
-						break;
-				}
-				this.gameObject.GetComponent<Image>().sprite = sprite;
-				this.gameObject.GetComponent<Image>().SetNativeSize();
+				case "EnterCombatBtn":
+					sprite = GameManager.GamePrefab.EnterCombatBtn;
+					break;
+				case "EnterAttackBtn":
+					sprite = GameManager.GamePrefab.EnterAttactBtn;
+					break;
+				case "EnterAutoBtn":
+					sprite = GameManager.GamePrefab.EnterAutoBtn;
+					break;
+				case "EnterRunBtn":
+					sprite = GameManager.GamePrefab.EnterRunBtn;
+					break;
+				case "EnterToolsBtn":
+					sprite = GameManager.GamePrefab.EnterToolsBtn;
+					break;
+				default:
+					break;
 			}
+			this.gameObject.GetComponent<Image>().sprite = sprite;
+			this.gameObject.GetComponent<Image>().SetNativeSize();
 		}
 
 		public override void OnPointerExit(PointerEventData eventData)

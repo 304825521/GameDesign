@@ -24,23 +24,24 @@ namespace FS2.Grid
 
         Dictionary<string, GameObject> GridDictionarys;
 
+        public List<GameObject> EnemyGrids = new List<GameObject>();
+        public List<GameObject> PlayerGrids = new List<GameObject>();
+
         private void OnEnable()
         {
-            // MapData mapData = new MapData();
             GridDictionarys = new Dictionary<string, GameObject>();
-            //TODO:将来要从别的地方读取不同的地图的GridManager的tranform该给CreateGrid
-            CreateGrid();
         }
 
 
-        #region 网格系统的相关代码
+        #region 创造网格系统的相关代码
         /// <summary>
         /// 创造一个战斗网格
         /// </summary>
-        /// <param name="targetPos">生成网格的位置</param>
-        /// <param name="distance">敌人和玩家的距离</param>
-        public void CreateGrid()
+        /// <param name="vector">生成网格的位置</param>
+        public void CreateGrid(Vector2 vector)
         {
+          
+            this.transform.position = vector;
             //创立玩家网格
             CreatePlayerGrid(PlayerGrid.transform);
             //创立敌人网格
@@ -58,14 +59,13 @@ namespace FS2.Grid
                     GameObject obj = new GameObject(i + "-" + j);
                     obj.transform.SetParent(EnemyGrid);
                     obj.transform.localPosition = Origin;
+                    EnemyGrids.Add(obj);
 
                     GameObject temp = Instantiate<GameObject>(GridPrefab, obj.transform);
                     temp.SetActive(false);
                     temp.name = "Grid";
 
                 }
-
-
             }
         }
 
@@ -80,16 +80,44 @@ namespace FS2.Grid
                     GameObject obj = new GameObject(i + "-" + j);
                     obj.transform.SetParent(PlayerGrid);
                     obj.transform.localPosition = Origin;
+                    PlayerGrids.Add(obj);
+
                     GameObject temp = Instantiate<GameObject>(GridPrefab, obj.transform);
                     temp.SetActive(false);
                     temp.name = "Grid";
-
                 }
             }
         }
         #endregion
 
-     
+        public void PlaceUnitInGrid(Unit unit, string locationName)
+		{
+
+            if(unit.gameObject.tag == "Enemy")
+			{
+				for (int i = 0; i < EnemyGrids.Count; i++)
+				{
+                    if(EnemyGrids[i].name == locationName)
+					{
+                        unit.transform.SetParent(EnemyGrids[i].transform);
+                        unit.transform.localPosition = Vector3.zero;
+					}
+				}
+			}
+
+            else if (unit.gameObject.tag == "Player")
+            {
+                for (int i = 0; i < PlayerGrids.Count; i++)
+                {
+                    if (PlayerGrids[i].name == locationName)
+					{
+
+						unit.transform.SetParent(PlayerGrids[i].transform);
+                        unit.transform.localPosition = Vector3.zero;
+                    }
+				}
+            }
+        }
 
     }
 

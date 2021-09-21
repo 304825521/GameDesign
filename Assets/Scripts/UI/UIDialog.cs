@@ -37,8 +37,8 @@ namespace FS2.UI
 		public Sprite[] protaits;
 		public string[] names;
 		public string[] dialogueLines;
-		bool haveSprite;
-		bool isLeft;
+		bool[] haveSprite;
+		bool[] isLeft;
 		public int size;
 
 		public GameObject LeftDialog;
@@ -73,10 +73,12 @@ namespace FS2.UI
 		private void OpenDialog()
 		{
 			this.gameObject.SetActive(false);
-			if (haveSprite)
+			if (haveSprite[currentIndex])
 			{
-				if (isLeft)
+				if (isLeft[currentIndex])
 				{
+					RightDialog.SetActive(false);
+					Dialog.SetActive(false);
 					Head = LeftDialog.transform.Find("Head").gameObject;
 					ContentText = LeftDialog.transform.Find("ContentText").gameObject;
 					NameText = LeftDialog.transform.Find("NameText").gameObject;
@@ -90,9 +92,11 @@ namespace FS2.UI
 				}
 				else
 				{
-					Head = LeftDialog.transform.Find("Head").gameObject;
-					ContentText = LeftDialog.transform.Find("ContentText").gameObject;
-					NameText = LeftDialog.transform.Find("NameText").gameObject;
+					LeftDialog.SetActive(false);
+					Dialog.SetActive(false);
+					Head = RightDialog.transform.Find("Head").gameObject;
+					ContentText = RightDialog.transform.Find("ContentText").gameObject;
+					NameText = RightDialog.transform.Find("NameText").gameObject;
 
 
 
@@ -104,9 +108,11 @@ namespace FS2.UI
 			}
 			else
 			{
-				Head = LeftDialog.transform.Find("Head").gameObject;
-				ContentText = LeftDialog.transform.Find("ContentText").gameObject;
-				NameText = LeftDialog.transform.Find("NameText").gameObject;
+				LeftDialog.SetActive(false);
+				RightDialog.SetActive(false);
+				Head = Dialog.transform.Find("Head").gameObject;
+				ContentText = Dialog.transform.Find("ContentText").gameObject;
+				NameText = Dialog.transform.Find("NameText").gameObject;
 
 
 

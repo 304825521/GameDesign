@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace FS2.UI
 {
@@ -11,35 +12,49 @@ namespace FS2.UI
         public Action ToolsPressed;
         public Action AttackPressed;
 
-        public void OnCombatPressed()
-        {
-            
-            CombatPressed?.Invoke();
-        }
+		public GameObject ActionPannel;
 
-        public void OnDefendPressed()
-        {
-            DefendPressed?.Invoke();
-        }
+		#region 点击按钮的的事件
+		public void OnCombatPressed()
+		{
 
-        public void OnAttackPressed()
-        {
-            AttackPressed?.Invoke();
-        }
+			CombatPressed?.Invoke();
+		}
 
-        public void OnToolsPressed()
-        {
-            ToolsPressed?.Invoke();
-        }
+		public void OnDefendPressed()
+		{
+			DefendPressed?.Invoke();
+		}
 
-        public void OnRunPressed()
-        {
-            RunPressed?.Invoke();
-        }
+		public void OnAttackPressed()
+		{
+			AttackPressed?.Invoke();
+		}
 
-        public void OnAutoPressed()
-        {
-            AutoPressed?.Invoke();
-        }
-    }
+		public void OnToolsPressed()
+		{
+			ToolsPressed?.Invoke();
+		}
+
+		public void OnRunPressed()
+		{
+			RunPressed?.Invoke();
+		}
+
+		public void OnAutoPressed()
+		{
+			AutoPressed?.Invoke();
+		} 
+		#endregion
+
+		/// <summary>
+		/// 获取谁开启了攻击面板
+		/// </summary>
+		/// <returns></returns>
+		public string GetNameOpenPannel()
+		{
+			return ActionPannel.GetComponent<ActionPannel>().NameOpenPannel;
+		}
+
+	}
 }

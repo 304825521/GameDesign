@@ -11,6 +11,7 @@ namespace FS2.UI
 		public override void OnPointerClick(PointerEventData eventData)
 		{
             //TODO:开始选取敌人的逻辑
+			//TODO:需要知道技能的属性
         }
 
 		/// <summary>
@@ -32,9 +33,5 @@ namespace FS2.UI
 				Cover.SetActive(false);
 			}
 		}
-
-		
-
-		
 	}
 }

@@ -34,5 +34,11 @@ namespace FS2.Utility
 		{
 			UnityEngine.Object.DestroyImmediate(obj);
 		}
+
+		public static char[] GetChars(int _num)
+		{
+			string temp = _num.ToString();
+			return temp.ToCharArray();
+		}
 	}
 }
