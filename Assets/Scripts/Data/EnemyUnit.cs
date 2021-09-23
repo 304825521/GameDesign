@@ -14,7 +14,7 @@ namespace FS2.Data
 		public override void StartBattle()
 		{
 			//TODO:开始AI的攻击逻辑
-			if (canAttack == false) ;
+			if (canAttack == false) { return; }
 			FindPlayer();
 		}
 

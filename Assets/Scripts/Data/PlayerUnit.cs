@@ -6,6 +6,13 @@ namespace FS2.Data
 {
 	public class PlayerUnit : Unit
 	{
-
-	}
+        private void Update()
+        {
+            switch ()
+            {
+                default:
+                    break;
+            }
+        }
+    }
 }
