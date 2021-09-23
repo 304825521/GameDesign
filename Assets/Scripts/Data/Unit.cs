@@ -16,8 +16,24 @@ namespace FS2.Data
 		GameObject GridObj;
 		GameObject BaseObj;
 
-		public CharacterData CharacterData;
+        private void OnEnable()
+        {
+			InitDataFromCharcterData();
+		}
 
+        public CharacterData CharacterData;
+
+		/// <summary>
+        /// 初始化敌人的基本属性
+        /// </summary>
+		public void InitDataFromCharcterData()
+        {
+			CharacterData.CurrentHp = CharacterData.MaxHp;
+			CharacterData.CurrentMp = CharacterData.MaxMp;
+			CharacterData.CurrentAttack = CharacterData.Attack;
+			CharacterData.CurrentDefence = CharacterData.Defence;
+			CharacterData.CurrentHp = CharacterData.MaxHp;
+		}
 
 		/// <summary>
 		/// 开启战斗顺序进度条

@@ -59,6 +59,13 @@ namespace FS2.UI
 			Base.SetActive(true);
 		}
 
+		public void AfterFinishedAttack()
+        {
+			Base.SetActive(false);
+			UIChoice = Game.UI.Get<UIChoice>();
+			UIChoice.CtrlActionPannel(false);
+		}
+
 
 	}
 

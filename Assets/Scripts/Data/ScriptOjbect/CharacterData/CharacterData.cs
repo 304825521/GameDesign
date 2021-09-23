@@ -23,7 +23,7 @@ namespace FS2.Data
 
 		public FSM fsm = FSM.Idle;
 
-		Animator Animator;
+		public UIDynamic UIDynamic;
 
 		public event PropertyChangedEventHandler PropertyChanged;
 
@@ -32,37 +32,23 @@ namespace FS2.Data
 			this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 
-		private void Awake()
-		{
-			Animator = GetComponent<Animator>();
-		}
-/*		private void Update()
-		{
-			CheckFSM();
-		}
 
-		public virtual void CheckFSM()
-		{
-			switch (fsm)
-			{
-				case FSM.Idle:
-					Animator.Play("Idle");
-					break;
-				case FSM.Defend:
-					break;
-				case FSM.Attack_Single:
-					break;
-				case FSM.Skill:
-					break;
+
+        private void Update()
+        {
+            switch (fsm)
+            {
 				case FSM.GetHurt:
-					Animator.Play("GetHurt");
+					UIDynamic.SetTrigger("GetHurt");
 					break;
-				default:
-					break;
-			}
-		}*/
 
-		public void BackToIdle()
+				default:
+                    break;
+            }
+        }
+
+
+        public void BackToIdle()
 		{
 			fsm = FSM.Idle;
 		}
@@ -130,10 +116,29 @@ namespace FS2.Data
 			set { Attribute.speed = value; }
 		}
 
+		public int Attack
+		{
+			get { if (Attribute != null) return Attribute.attack; else return 0; }
+			set { Attribute.attack = value; }
+		}
+
+		public int Defence
+		{
+			get { if (Attribute != null) return Attribute.defence; else return 0; }
+			set { Attribute.defence = value; }
+		}
+
 		public int CurrentHp
 		{
 			get { if (Attribute != null) return Attribute.currentHp; else return 0; }
-			set { Attribute.currentHp = value; }
+			set
+            {
+				Attribute.currentHp = value;
+				if(Attribute.currentHp <= 0)
+                {
+					fsm = FSM.GetHurt;
+                }
+			}
 		}
 
 		public int CurrentMp

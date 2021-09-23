@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Attribute: {fileID: 11400000, guid: 701375e84f5896b4984bcd068cf1eb76, type: 2}
   fsm: 0
+  UIDynamic: {fileID: 805134799545920846}

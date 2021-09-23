@@ -24,10 +24,10 @@ MonoBehaviour:
   speed: 31
   currentHp: 142
   currentMp: 46
-  currentDefence: 0
-  currentAttack: 0
+  currentDefence: 5
+  currentAttack: 20
   currentlevel: 3
   maxskillNumber: 0
-  attack: 20
+  attack: 100
   defence: 5
   currentExp: 0

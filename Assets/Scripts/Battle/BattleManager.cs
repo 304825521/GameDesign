@@ -99,7 +99,9 @@ namespace FS2.FSM.Battle{
 			//当前只有一个敌人
 			if(EnemyList.Count == 1)
 			{
-				//1. 寻找当前敌人的grid位置
+				//0. 关闭攻击面板
+				
+				//1. 寻找当前敌人的grid位置 
 				Transform m_Enemy = EnemyList[0].GetComponentInParent<Transform>();
 
 				//2. 获得开启面板玩家的单位和
@@ -109,6 +111,7 @@ namespace FS2.FSM.Battle{
 				Vector3 attackPoint = EnemyList[0].transform.position - Player.gameObject.transform.position;
 				attackPoint.Normalize();
 				//4. 开始移动
+				UIBattle.CloseUIAfterAttack?.Invoke();
 				Player.transform.DOMove(EnemyList[0].transform.position - attackPoint, 0.4f)
 					.OnUpdate(()=> {
 						Player.UIDynamic.Play("JumpTo");
@@ -124,6 +127,7 @@ namespace FS2.FSM.Battle{
 									})
 									.OnComplete(()=> {
 										Player.UIDynamic.Play("Idle");
+										UIBattle.ResetLoading?.Invoke();
 									})
 									;
 					});
@@ -135,15 +139,15 @@ namespace FS2.FSM.Battle{
 		{
 			float damage = Attacker.CharacterData.CurrentAttack - Defender.CharacterData.CurrentDefence;
 			int realDamage = (int)UnityEngine.Random.Range(damage - 3f, damage + 3f);
-            //eGetChars(realDamage);
-
+            if(realDamage <= 0) { realDamage = 1; }
+			//TODO:伤害UI显示（完成）
             char[] vs = Extensions.GetChars(realDamage);
 			UIDamage uIDamage = Game.UI.Open<UIDamage>();
 			uIDamage.SetDamageNumberByChars(vs);
 			uIDamage.SetParent(Defender.transform);
 			Defender.CharacterData.CurrentHp -= (int)realDamage;
 			Defender.UIDynamic.Play("GetHurt");
-			//TODO:人物收到伤害后飘动文字(21/9/2021)
+		
 			
 		}
 

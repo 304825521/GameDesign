@@ -56,5 +56,16 @@ namespace FS2.UI
 			return ActionPannel.GetComponent<ActionPannel>().NameOpenPannel;
 		}
 
+		/// <summary>
+        /// 控制ActionPannel的开启
+        /// </summary>
+        /// <param name="FLAG"></param>
+		public void CtrlActionPannel(bool FLAG)
+        {
+			Debug.Log("123");
+			ActionPannel.SetActive(FLAG);
+
+		}
+
 	}
 }

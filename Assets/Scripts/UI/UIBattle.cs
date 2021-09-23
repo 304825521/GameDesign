@@ -13,6 +13,8 @@ namespace FS2.UI
         public UIChoice UIChoice;
 
         public Action CompleteLoading;
+        public Action ResetLoading;
+        public Action CloseUIAfterAttack;
 
 
         public override void Show()
@@ -35,6 +37,8 @@ namespace FS2.UI
      
                 if(Cards[i].isActiveAndEnabled && Cards[i].cardName == name)
 				{
+                    CloseUIAfterAttack += Cards[i].AfterFinishedAttack;
+                    ResetLoading += Cards[i].StartLoading;
                     Cards[i].StartLoading();
                 }
 			}

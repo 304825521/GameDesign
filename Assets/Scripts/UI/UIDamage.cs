@@ -61,8 +61,7 @@ namespace FS2.UI
 				}
 				Third.GetComponent<Image>().sprite = ThirdSprite;
 				Third.SetActive(true);
-				Vector3 target = new Vector3(this.transform.position.x - 150f, this.transform.position.y + 100f);
-				this.transform.DOJump(target, 2, 1, 3f);
+				JumpAnim();
 			}
 
 			else if (first == -1 && second != -1 && third != -1)
@@ -253,7 +252,7 @@ namespace FS2.UI
 				Third.SetActive(true);
 				Second.SetActive(true);
 				First.SetActive(true);
-				Rigidbody2D.AddForce(new Vector2(-0.5f, 2f));
+				JumpAnim();
 			}
 		}
 
@@ -496,8 +495,8 @@ namespace FS2.UI
 
         private void JumpAnim()
         {
-            Vector3 target = new Vector3(this.transform.position.x - 150f, this.transform.position.y + 100f);
-			this.transform.DOJump(target, 2, 1, 3f)
+            Vector3 target = new Vector3(this.transform.localPosition.x- 3f, this.transform.localPosition.y + 2f);
+			this.transform.DOJump(target, 2f, 1, 3f)
 				.OnComplete(() => {
 					this.Hide();
 				});
@@ -505,19 +504,11 @@ namespace FS2.UI
 
         public void SetParent(Transform transform)
         {
-			this.transform.SetParent(transform);
+			this.transform.SetParent(transform,false);
+			this.gameObject.transform.localScale = new Vector3(0.01f,0.01f,0.01f);
 			this.gameObject.transform.localPosition = Vector3.zero;
-        }
+		}
 
-		IEnumerator IJumpDamage()
-        {
-			float count = 0;
-            while (true)
-            {
-				
-				count += 0.2f;
-				yield return new WaitForSeconds(0.2f);
-            }
-        }
+
 	}
 }
