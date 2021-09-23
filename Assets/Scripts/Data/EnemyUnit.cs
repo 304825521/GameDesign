@@ -66,7 +66,7 @@ namespace FS2.Data
 				.OnComplete(async () =>
 				{
 					UIDynamic.Play("Attack");
-					await Task.Delay(400);
+					await Task.Delay(700);
 					BattleManager.Instsance.HurtManager(Attack, Defend);
 					Attack.transform.DOMove(OriginPosition, 0.4f)
 						.OnUpdate(() =>

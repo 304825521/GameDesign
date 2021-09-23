@@ -121,13 +121,10 @@ namespace FS2.Data
 				Attribute.currentHp = value;
 				if(Attribute.currentHp <= 0)
                 {
-					//TODO:这里将状态机转换成死亡的时候
-					//fsm = FSM.GetHurt;
-				}
-				else
-				{
-					fsm = FSM.GetHurt;
-				}
+                    //TODO:这里将状态机转换成死亡的时候
+                    fsm = FSM.Dead;
+                }
+
 			}
 		}
 

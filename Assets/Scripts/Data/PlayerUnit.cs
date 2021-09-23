@@ -8,9 +8,15 @@ namespace FS2.Data
 	{
         private void Update()
         {
-            switch ()
+            switch (CharacterData.fsm)
             {
-                default:
+                case FSM.GetHurt:
+                    UIDynamic.Play("GetHurt");
+                    break;
+                case FSM.Dead:
+                    UIDynamic.Play("Dead");
+                    break;
+                default:        
                     break;
             }
         }

@@ -22,12 +22,12 @@ MonoBehaviour:
   strong: 0
   magicResistance: 0
   speed: 0
-  currentHp: 0
-  currentMp: 0
-  currentDefence: 0
-  currentAttack: 0
+  currentHp: 330
+  currentMp: 200
+  currentDefence: 7
+  currentAttack: 20
   currentlevel: 0
   maxskillNumber: 0
-  attack: 20
+  attack: 130
   defence: 7
   currentExp: 0
