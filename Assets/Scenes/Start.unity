@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 17412
+  m_CachedInstanceID: 23258
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -1502,7 +1502,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 430, y: 320}
   m_Transitions: []
-  m_CachedInstanceID: 17418
+  m_CachedInstanceID: 23264
 --- !u!114 &1258212754
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 300, y: 210}
   m_Transitions: []
-  m_CachedInstanceID: 17420
+  m_CachedInstanceID: 23266
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -1957,6 +1957,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3583106312666621705, guid: 98bb058412763481996e8822cf4ce0ab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1177675632327203080, guid: 98bb058412763481996e8822cf4ce0ab,
         type: 3}
       propertyPath: m_Name

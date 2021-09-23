@@ -33,26 +33,6 @@ namespace FS2.Data
 			this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 
-
-
-        private void Update()
-        {
-            switch (fsm)
-            {
-				case FSM.Dead:
-					//TODO:这里是写人物死亡动作的
-					//UIDynamic.SetTrigger("GetHurt");
-					break;
-				case FSM.GetHurt:
-					UIDynamic.SetTrigger("GetHurt");
-					break;
-
-				default:
-                    break;
-            }
-        }
-
-
         public void BackToIdle()
 		{
 			fsm = FSM.Idle;
@@ -65,7 +45,7 @@ namespace FS2.Data
 			set
 			{
 				Attribute.maxHp = value;
-				OnPropertyChanged("MaxHp");
+				
 			}
 		}
 

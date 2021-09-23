@@ -73,7 +73,7 @@ namespace FS2.FSM.Battle{
 			GridManager.Instsance.PlaceUnitInGrid(YingZhao, "0-2");
 
 			Player.StartBattle();
-			YingZhao.StartBattle();
+			//YingZhao.StartBattle();
 		}
 
 		private void InitGrid()
@@ -135,7 +135,7 @@ namespace FS2.FSM.Battle{
 			}
 		}
 
-		private void HurtManager(Unit Attacker,Unit Defender)
+		public void HurtManager(Unit Attacker,Unit Defender)
 		{
 			float damage = Attacker.CharacterData.CurrentAttack - Defender.CharacterData.CurrentDefence;
 			int realDamage = (int)UnityEngine.Random.Range(damage - 3f, damage + 3f);
