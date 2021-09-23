@@ -9,8 +9,8 @@ namespace FS2.Data
 	{
 		public string unitName;
 		//该单位是否在行动
-		protected bool isAction = false;
-		
+		private bool isAction = false;
+
 		public UIDynamic UIDynamic;
 
 		GameObject GridObj;
@@ -23,9 +23,11 @@ namespace FS2.Data
 
         public CharacterData CharacterData;
 
+		public bool IsAction { get => isAction; set => isAction = value; }
+
 		/// <summary>
-        /// 初始化敌人的基本属性
-        /// </summary>
+		/// 初始化敌人的基本属性
+		/// </summary>
 		public void InitDataFromCharcterData()
         {
 			CharacterData.CurrentHp = CharacterData.MaxHp;

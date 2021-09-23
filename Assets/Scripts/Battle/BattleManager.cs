@@ -140,7 +140,6 @@ namespace FS2.FSM.Battle{
 			float damage = Attacker.CharacterData.CurrentAttack - Defender.CharacterData.CurrentDefence;
 			int realDamage = (int)UnityEngine.Random.Range(damage - 3f, damage + 3f);
             if(realDamage <= 0) { realDamage = 1; }
-			//TODO:伤害UI显示（完成）
             char[] vs = Extensions.GetChars(realDamage);
 			UIDamage uIDamage = Game.UI.Open<UIDamage>();
 			uIDamage.SetDamageNumberByChars(vs);
@@ -165,7 +164,12 @@ namespace FS2.FSM.Battle{
 			return null;
 		}
 
+		#region AILogic
 
+
+
+
+		#endregion
 	}
 
 }

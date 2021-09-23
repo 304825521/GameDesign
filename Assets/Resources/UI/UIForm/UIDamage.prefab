@@ -190,7 +190,7 @@ MonoBehaviour:
   First: {fileID: 6525833557229974771}
   Second: {fileID: 6525833558217321244}
   Third: {fileID: 6525833558722449466}
-  ExistTime: 3
+  ExistTime: 1.5
   Rigidbody2D: {fileID: 5568018542141684887}
 --- !u!1 &6525833558217321244
 GameObject:

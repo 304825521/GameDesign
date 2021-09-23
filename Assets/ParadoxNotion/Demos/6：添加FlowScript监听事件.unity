@@ -1,0 +1,870 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &345982464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345982470}
+  - component: {fileID: 345982469}
+  - component: {fileID: 345982468}
+  - component: {fileID: 345982467}
+  - component: {fileID: 345982466}
+  - component: {fileID: 345982465}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &345982465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345982464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &345982466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345982464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5c3ebb24c97464da319951cafe5a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"FlowCanvas.FlowScript","nodes":[{"keyCode":{"_value":97},"_position":{"x":134.0,"y":252.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"0"},{"_position":{"x":571.0,"y":252.0},"$type":"FlowCanvas.Nodes.AttachCustomEvent","$id":"1"},{"eventName":{"_value":"AttachedEvent"},"target":{},"targets":{},"_position":{"x":66.0,"y":619.0},"_comment":"\u76d1\u542c\u4e8b\u4ef6\u540d\u79f0\uff1a
+    AttachedEvent\n","$type":"FlowCanvas.Nodes.CustomEventListener","$id":"2"},{"_position":{"x":727.0,"y":604.0},"$type":"FlowCanvas.Nodes.G_LogOnScreen","$id":"3"},{"_simplexNode":{},"_color":{"r":0.1568628,"g":0.3568628,"b":0.4862745,"a":1.0},"_position":{"x":1231.0,"y":604.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.S_MaterialColor,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"4"},{"_portCount":4,"_inputPortValues":{"0":{"$content":"receiver:","$type":"System.String"},"2":{"$content":" 
+    Sender:","$type":"System.String"}},"_position":{"x":547.0,"y":686.0},"$type":"FlowCanvas.Nodes.G_StringAppend","$id":"5"},{"_simplexNode":{},"_color":{"r":0.227451,"g":0.4745098,"b":0.3843137,"a":1.0},"_position":{"x":761.0,"y":713.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.G_Component`1[[UnityEngine.Renderer,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"6"},{"_method":{"_baseInfo":"UnityEngine.Renderer|get_material|UnityEngine.Material","_paramsInfo":""},"_color":{"r":0.227451,"g":0.4745098,"b":0.3843137,"a":1.0},"_position":{"x":997.0,"y":711.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"7"},{"_color":{"r":0.7529412,"g":0.145098,"b":0.1254902,"a":1.0},"_position":{"x":-289.0,"y":448.0},"$type":"FlowCanvas.Nodes.AttachCustomEvent","$id":"8"},{"_position":{"x":1579.0,"y":528.0},"$type":"FlowCanvas.Nodes.ValuePoint`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"9"},{"_position":{"x":1888.0,"y":373.3319},"$type":"FlowCanvas.Nodes.DetachAllCustomEvent","$id":"10"},{"_position":{"x":1863.0,"y":500.0},"$type":"FlowCanvas.Nodes.DetachCustomEvent1","$id":"11"},{"_inputPortValues":{"GraphOwner":{"$content":[null,null],"$type":"System.Collections.Generic.List`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}},"_position":{"x":1865.0,"y":620.0},"$type":"FlowCanvas.Nodes.DetachCustomEvent2","$id":"12"},{"keyCode":{"_value":102},"_position":{"x":146.0,"y":1095.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"13"},{"_simplexNode":{},"_inputPortValues":{"eventName":{"$content":"AttachedEvent","$type":"System.String"}},"_color":{"r":0.1568628,"g":0.3568628,"b":0.4862745,"a":1.0},"_position":{"x":443.0,"y":1093.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.SendEvent,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"14"},{"keyCode":{"_value":100},"_position":{"x":1584.0,"y":372.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"15"},{"keyCode":{"_value":98},"_position":{"x":-559.0,"y":451.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"16"},{"keyCode":{"_value":103},"_position":{"x":-472.0,"y":848.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"17"},{"_simplexNode":{},"_inputPortValues":{"eventName":{"$content":"AttachedEvent","$type":"System.String"}},"_color":{"r":0.1568628,"g":0.3568628,"b":0.4862745,"a":1.0},"_position":{"x":-220.0,"y":848.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.SendEvent,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"18"},{"value":{"_value":1},"_position":{"x":260.0,"y":392.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"19"},{"_simplexNode":{},"_color":{"r":0.227451,"g":0.4745098,"b":0.3843137,"a":1.0},"_position":{"x":889.0,"y":799.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.G_RandomFloat,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"20"},{"_constructor":{"_baseInfo":"UnityEngine.Color|$Constructor","_paramsInfo":"System.Single|System.Single|System.Single"},"_color":{"r":0.227451,"g":0.4745098,"b":0.3843137,"a":1.0},"_position":{"x":1039.0,"y":783.0},"$type":"FlowCanvas.Nodes.ReflectedConstructorNodeWrapper","$id":"21"},{"value":{"_value":1},"_color":{"r":0.08235294,"g":0.09019608,"b":0.07843138,"a":1.0},"_position":{"x":1672.0,"y":575.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"22"},{"value":{"_value":2},"_position":{"x":-456.0,"y":607.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"23"}],"connections":[{"_sourcePortName":"Down","_targetPortName":"In","_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"EventListener","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Dispatched","_targetPortName":"In","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Receiver","_targetPortName":"1","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Sender","_targetPortName":"3","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Receiver","_targetPortName":"behavior","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"6"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Component,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Event","_targetPortName":"EventListener","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Event","_targetPortName":"In","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Out","_targetPortName":"
+    ","_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"value","_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"Renderer","_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"7"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Renderer,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"material","_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"4"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Material,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Out","_targetPortName":"EventListener","_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Out","_targetPortName":"EventListener","_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Out","_targetPortName":"EventListener","_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"12"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Down","_targetPortName":"
+    ","_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"14"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Down","_targetPortName":"In","_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"10"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Down","_targetPortName":"In","_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Down","_targetPortName":"
+    ","_sourceNode":{"$ref":"17"},"_targetNode":{"$ref":"18"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"AttachGraphOwner","_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"target","_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"14"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"r","_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"g","_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"b","_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"color","_sourceNode":{"$ref":"21"},"_targetNode":{"$ref":"4"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Color,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"GraphOwner","_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"AttachGraphOwner","_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"target","_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"18"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"canvasGroups":[{"name":"\u6309\u4e0bA\uff0c\u4e3a
+    Sphere\u7ed1\u5b9a\u76d1\u542c\u4e8b\u4ef6\uff08Event_Listener\u8282\u70b9\uff08\u529f\u80fd\u548cCustomEvent\u7c7b\u4f3c\uff09\uff09","rect":{"xMin":34.0,"yMin":152.0,"xMax":1399.279,"yMax":959.8698}},{"name":"\u6309\u4e0bF\uff0c\u5411Sphere\u53d1\u9001\u4e8b\u4ef6","rect":{"xMin":46.13159,"yMin":995.9474,"xMax":622.7289,"yMax":1236.024}},{"name":"\u79fb\u9664\u76d1\u542c\u4e8b\u4ef6","rect":{"xMin":1486.52,"yMin":274.0409,"xMax":2159.379,"yMax":736.2563}},{"name":"\u6309B\uff0c\u6dfb\u52a0\u76d1\u542cCapsule","rect":{"xMin":-622.4111,"yMin":345.283,"xMax":-103.6544,"yMax":716.0632}},{"name":"\u6309\u4e0bG\uff0c\u5411Capsule\u53d1\u9001\u4e8b\u4ef6","rect":{"xMin":-573.1938,"yMin":741.9335,"xMax":-93.08459,"yMax":1015.301}}],"localBlackboard":{"_variables":{}}}'
+  _boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 2040096272}
+  - {fileID: 1366623915}
+  _boundGraphSource:
+    _version: 3.03
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 1461575309}
+  _blackboard: {fileID: 345982465}
+--- !u!23 &345982467
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345982464}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &345982468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345982464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &345982469
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345982464}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &345982470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345982464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &535686129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 535686131}
+  - component: {fileID: 535686130}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &535686130
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535686129}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &535686131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535686129}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1124459521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1124459525}
+  - component: {fileID: 1124459524}
+  - component: {fileID: 1124459523}
+  - component: {fileID: 1124459522}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1124459522
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124459521}
+  m_Enabled: 1
+--- !u!124 &1124459523
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124459521}
+  m_Enabled: 1
+--- !u!20 &1124459524
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124459521}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1124459525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124459521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1366623915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366623921}
+  - component: {fileID: 1366623920}
+  - component: {fileID: 1366623919}
+  - component: {fileID: 1366623918}
+  - component: {fileID: 1366623917}
+  - component: {fileID: 1366623916}
+  m_Layer: 0
+  m_Name: Capsule
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1366623916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366623915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1366623917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366623915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5c3ebb24c97464da319951cafe5a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"FlowCanvas.FlowScript","nodes":[],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 3.03
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 1480771536}
+  _blackboard: {fileID: 1366623916}
+--- !u!23 &1366623918
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366623915}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!136 &1366623919
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366623915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1366623920
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366623915}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1366623921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366623915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.1172428, y: 2.03042, z: 3.7588603}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1461575309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
+  m_Name: Cube FlowScript
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"FlowCanvas.FlowScript","nodes":[{"keyCode":{"_value":97},"_position":{"x":134.0,"y":252.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"0"},{"_position":{"x":571.0,"y":252.0},"$type":"FlowCanvas.Nodes.AttachCustomEvent","$id":"1"},{"eventName":{"_value":"AttachedEvent"},"target":{},"targets":{},"_position":{"x":66.0,"y":619.0},"_comment":"\u76d1\u542c\u4e8b\u4ef6\u540d\u79f0\uff1a
+    AttachedEvent\n","$type":"FlowCanvas.Nodes.CustomEventListener","$id":"2"},{"_position":{"x":727.0,"y":604.0},"$type":"FlowCanvas.Nodes.G_LogOnScreen","$id":"3"},{"_simplexNode":{},"_color":{"r":0.1568628,"g":0.3568628,"b":0.4862745,"a":1.0},"_position":{"x":1231.0,"y":604.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.S_MaterialColor,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"4"},{"_portCount":4,"_inputPortValues":{"0":{"$content":"receiver:","$type":"System.String"},"2":{"$content":" 
+    Sender:","$type":"System.String"}},"_position":{"x":547.0,"y":686.0},"$type":"FlowCanvas.Nodes.G_StringAppend","$id":"5"},{"_simplexNode":{},"_color":{"r":0.227451,"g":0.4745098,"b":0.3843137,"a":1.0},"_position":{"x":761.0,"y":713.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.G_Component`1[[UnityEngine.Renderer,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"6"},{"_method":{"_baseInfo":"UnityEngine.Renderer|get_material|UnityEngine.Material","_paramsInfo":""},"_color":{"r":0.227451,"g":0.4745098,"b":0.3843137,"a":1.0},"_position":{"x":997.0,"y":711.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"7"},{"_color":{"r":0.7529412,"g":0.145098,"b":0.1254902,"a":1.0},"_position":{"x":-289.0,"y":448.0},"$type":"FlowCanvas.Nodes.AttachCustomEvent","$id":"8"},{"_position":{"x":1579.0,"y":528.0},"$type":"FlowCanvas.Nodes.ValuePoint`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"9"},{"_position":{"x":1888.0,"y":373.3319},"$type":"FlowCanvas.Nodes.DetachAllCustomEvent","$id":"10"},{"_position":{"x":1863.0,"y":500.0},"$type":"FlowCanvas.Nodes.DetachCustomEvent1","$id":"11"},{"_inputPortValues":{"GraphOwner":{"$content":[null,null],"$type":"System.Collections.Generic.List`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}},"_position":{"x":1865.0,"y":620.0},"$type":"FlowCanvas.Nodes.DetachCustomEvent2","$id":"12"},{"keyCode":{"_value":102},"_position":{"x":146.0,"y":1095.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"13"},{"_simplexNode":{},"_inputPortValues":{"eventName":{"$content":"AttachedEvent","$type":"System.String"}},"_color":{"r":0.1568628,"g":0.3568628,"b":0.4862745,"a":1.0},"_position":{"x":443.0,"y":1093.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.SendEvent,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"14"},{"keyCode":{"_value":100},"_position":{"x":1584.0,"y":372.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"15"},{"keyCode":{"_value":98},"_position":{"x":-559.0,"y":451.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"16"},{"keyCode":{"_value":103},"_position":{"x":-472.0,"y":848.0},"$type":"FlowCanvas.Nodes.KeyboardEvents","$id":"17"},{"_simplexNode":{},"_inputPortValues":{"eventName":{"$content":"AttachedEvent","$type":"System.String"}},"_color":{"r":0.1568628,"g":0.3568628,"b":0.4862745,"a":1.0},"_position":{"x":-220.0,"y":848.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.SendEvent,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"18"},{"value":{"_value":1},"_position":{"x":260.0,"y":392.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"19"},{"_simplexNode":{},"_color":{"r":0.227451,"g":0.4745098,"b":0.3843137,"a":1.0},"_position":{"x":889.0,"y":799.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.G_RandomFloat,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"20"},{"_constructor":{"_baseInfo":"UnityEngine.Color|$Constructor","_paramsInfo":"System.Single|System.Single|System.Single"},"_color":{"r":0.227451,"g":0.4745098,"b":0.3843137,"a":1.0},"_position":{"x":1039.0,"y":783.0},"$type":"FlowCanvas.Nodes.ReflectedConstructorNodeWrapper","$id":"21"},{"value":{"_value":1},"_color":{"r":0.08235294,"g":0.09019608,"b":0.07843138,"a":1.0},"_position":{"x":1672.0,"y":575.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"22"},{"value":{"_value":2},"_position":{"x":-456.0,"y":607.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"23"}],"connections":[{"_sourcePortName":"Down","_targetPortName":"In","_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"EventListener","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Dispatched","_targetPortName":"In","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Receiver","_targetPortName":"1","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Sender","_targetPortName":"3","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Receiver","_targetPortName":"behavior","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"6"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Component,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Event","_targetPortName":"EventListener","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Event","_targetPortName":"In","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Out","_targetPortName":"
+    ","_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"value","_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"Renderer","_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"7"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Renderer,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"material","_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"4"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Material,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Out","_targetPortName":"EventListener","_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Out","_targetPortName":"EventListener","_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Out","_targetPortName":"EventListener","_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"12"},"$type":"FlowCanvas.BinderConnection`1[[FlowCanvas.Nodes.CustomEventListener,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Down","_targetPortName":"
+    ","_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"14"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Down","_targetPortName":"In","_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"10"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Down","_targetPortName":"In","_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Down","_targetPortName":"
+    ","_sourceNode":{"$ref":"17"},"_targetNode":{"$ref":"18"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"AttachGraphOwner","_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"target","_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"14"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"r","_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"g","_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"b","_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"color","_sourceNode":{"$ref":"21"},"_targetNode":{"$ref":"4"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Color,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"GraphOwner","_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"AttachGraphOwner","_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"target","_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"18"},"$type":"FlowCanvas.BinderConnection`1[[NodeCanvas.Framework.GraphOwner,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"canvasGroups":[{"name":"\u6309\u4e0bA\uff0c\u4e3a
+    Sphere\u7ed1\u5b9a\u76d1\u542c\u4e8b\u4ef6\uff08Event_Listener\u8282\u70b9\uff08\u529f\u80fd\u548cCustomEvent\u7c7b\u4f3c\uff09\uff09","rect":{"xMin":34.0,"yMin":152.0,"xMax":1399.279,"yMax":959.8698}},{"name":"\u6309\u4e0bF\uff0c\u5411Sphere\u53d1\u9001\u4e8b\u4ef6","rect":{"xMin":46.13159,"yMin":995.9474,"xMax":622.7289,"yMax":1236.024}},{"name":"\u79fb\u9664\u76d1\u542c\u4e8b\u4ef6","rect":{"xMin":1486.52,"yMin":274.0409,"xMax":2159.379,"yMax":736.2563}},{"name":"\u6309B\uff0c\u6dfb\u52a0\u76d1\u542cCapsule","rect":{"xMin":-622.4111,"yMin":345.283,"xMax":-103.6544,"yMax":716.0632}},{"name":"\u6309\u4e0bG\uff0c\u5411Capsule\u53d1\u9001\u4e8b\u4ef6","rect":{"xMin":-573.1938,"yMin":741.9335,"xMax":-93.08459,"yMax":1015.301}}],"localBlackboard":{"_variables":{}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 2040096272}
+  - {fileID: 1366623915}
+  _graphSource:
+    _version: 3.03
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _haltSerialization: 0
+--- !u!114 &1480771536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
+  m_Name: Capsule FlowScript
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"FlowCanvas.FlowScript","nodes":[],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.03
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _haltSerialization: 0
+--- !u!114 &1872320554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
+  m_Name: Sphere FlowScript
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"FlowCanvas.FlowScript","nodes":[],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.03
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _haltSerialization: 0
+--- !u!1 &2040096272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040096276}
+  - component: {fileID: 2040096275}
+  - component: {fileID: 2040096274}
+  - component: {fileID: 2040096273}
+  - component: {fileID: 2040096278}
+  - component: {fileID: 2040096277}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &2040096273
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040096272}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &2040096274
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040096272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2040096275
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040096272}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2040096276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040096272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.03, y: 2.03042, z: 3.7588603}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040096277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040096272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &2040096278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040096272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5c3ebb24c97464da319951cafe5a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"FlowCanvas.FlowScript","nodes":[],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 3.03
+    _category: 
+    _comments: 
+    _translation: {x: 0, y: 0}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 1872320554}
+  _blackboard: {fileID: 2040096277}

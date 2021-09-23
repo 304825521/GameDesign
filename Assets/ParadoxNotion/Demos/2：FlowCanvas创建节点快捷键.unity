@@ -1,0 +1,523 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &881085042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 881085046}
+  - component: {fileID: 881085045}
+  - component: {fileID: 881085044}
+  - component: {fileID: 881085043}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &881085043
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881085042}
+  m_Enabled: 1
+--- !u!124 &881085044
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881085042}
+  m_Enabled: 1
+--- !u!20 &881085045
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881085042}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &881085046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881085042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1034648167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034648169}
+  - component: {fileID: 1034648168}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1034648168
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034648167}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1034648169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034648167}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1346876185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
+  m_Name: Cube FlowScript
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"FlowCanvas.FlowScript","nodes":[{"_position":{"x":196.5121,"y":357.9598},"$type":"FlowCanvas.Nodes.ConstructionEvent"},{"_position":{"x":191.5121,"y":465.9598},"$type":"FlowCanvas.Nodes.EnableEvent"},{"_position":{"x":197.5121,"y":588.9598},"$type":"FlowCanvas.Nodes.StartEvent"},{"updateInterval":{},"_position":{"x":199.5121,"y":719.9598},"$type":"FlowCanvas.Nodes.UpdateEvent"},{"_position":{"x":175.5121,"y":905.4558},"$type":"FlowCanvas.Nodes.LateUpdateEvent"},{"_position":{"x":187.5121,"y":813.9598},"$type":"FlowCanvas.Nodes.FixedUpdateEvent"},{"_position":{"x":206.5121,"y":1016.96},"$type":"FlowCanvas.Nodes.DisableEvent"},{"_position":{"x":1060.707,"y":364.1913},"$type":"FlowCanvas.Nodes.ExecuteInEditModeEvent"},{"_position":{"x":1180.587,"y":541.7347},"$type":"FlowCanvas.Nodes.DebugEvent"},{"eventName":{"_value":"EventName"},"target":{},"targets":{},"_position":{"x":3843.736,"y":623.6777},"$type":"FlowCanvas.Nodes.CustomEvent"},{"value":{},"_color":{"a":1.0},"_position":{"x":223.9983,"y":-34.6664},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"value":{},"_color":{"a":1.0},"_position":{"x":386.6637,"y":-25.33314},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"value":{},"_color":{"a":1.0},"_position":{"x":542.6625,"y":-31.99975},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"value":{},"_color":{"a":1.0},"_position":{"x":703.9946,"y":-17.3332},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Quaternion,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"value":{},"_color":{"a":1.0},"_position":{"x":858.66,"y":-31.99975},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Color,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_position":{"x":666.1666,"y":435.5121},"$type":"FlowCanvas.Nodes.Split"},{"_position":{"x":722.3129,"y":691.9636},"$type":"FlowCanvas.Nodes.Sequence"},{"_simplexNode":{},"_position":{"x":523.5251,"y":688.9287},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.SendEvent,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_position":{"x":622.1602,"y":596.3634},"$type":"FlowCanvas.Nodes.OwnerVariable"},{"_position":{"x":552.3568,"y":320.1849},"$type":"FlowCanvas.Nodes.Sequence"},{"_position":{"x":1242.803,"y":676.7889},"$type":"FlowCanvas.Nodes.Delay"},{"_color":{"a":1.0},"_position":{"x":1086.504,"y":790.5988},"$type":"FlowCanvas.Nodes.Dummy"},{"_simplexNode":{},"_inputPortValues":{"multiplier":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":1059.19,"y":619.1252},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.DeltaTimed,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_simplexNode":{},"_inputPortValues":{"multiplier":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":1233.698,"y":817.9132},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.DeltaTimedVector3,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_UID":"2a3c2cf1-e120-47c1-8f6e-2ff7509377e1","_position":{"x":1757.223,"y":446.1344},"$type":"FlowCanvas.Nodes.RelayValueInput`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_position":{"x":1802.747,"y":669.2017},"$type":"FlowCanvas.Nodes.RelayValueOutput`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_simplexNode":{},"_inputPortValues":{"time":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":2270.126,"y":462.8265},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.Wait,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_simplexNode":{},"_position":{"x":2394.558,"y":593.3284},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.WaitForEndOfFrame,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_position":{"x":2526.578,"y":476.4837},"$type":"FlowCanvas.Nodes.While"},{"_simplexNode":{},"_position":{"x":3025.823,"y":509.8679},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.G_FindGameObject,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_simplexNode":{},"_position":{"x":3024.306,"y":713.2081},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.G_FindChild,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_position":{"x":2871.042,"y":567.5315},"$type":"FlowCanvas.Nodes.CustomFunctionCall"},{"_position":{"x":2902.909,"y":333.8421},"$type":"FlowCanvas.Nodes.ForEach`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_position":{"x":3584.25,"y":537.1823},"$type":"FlowCanvas.Nodes.CoroutineState"},{"_simplexNode":{},"_position":{"x":3734.479,"y":468.8964},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.Cache`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"connections":[],"canvasGroups":[{"name":"ctrl
+    + shift +\u9f20\u6807\u5de6\u952e\u6846\u9009  \u589e\u9009\u8282\u70b9        
+    shift +\u9f20\u6807\u5de6\u952e\u6846\u9009  \u51cf\u9009\u8282\u70b9  ","rect":{"xMin":72.74628,"yMin":1215.442,"xMax":1007.812,"yMax":1925.709}},{"name":"ctrl+alt
+    +c","rect":{"xMin":3423.007,"yMin":198.595,"xMax":4107.056,"yMax":976.4257}},{"name":"ctrl+alt
+    +W","rect":{"xMin":2091.984,"yMin":233.3315,"xMax":2683.979,"yMax":949.326}},{"name":"ctrl+alt
+    +F","rect":{"xMin":2780.74,"yMin":202.6167,"xMax":3337.354,"yMax":959.5184}},{"name":"ctrl+alt
+    +R","rect":{"xMin":1526.655,"yMin":227.9982,"xMax":2025.318,"yMax":938.6594}},{"name":"ctrl+alt
+    +D","rect":{"xMin":983.9924,"yMin":231.9982,"xMax":1425.322,"yMax":934.6594}},{"name":"ctrl+alt+A","rect":{"xMin":83.0,"yMin":233.0,"xMax":419.0,"yMax":1135.0}},{"name":"alt
+    +1 ,2,3,4,5","rect":{"xMin":123.9983,"yMin":-134.6664,"xMax":1170.66,"yMax":152.0002}},{"name":"ctrl+shift
+    +\u5de6\u952e\u6846\u9009  \u751f\u6210\u7ec4\u6846\uff0c\u6216\u8005 \u9009\u62e9\u8282\u70b9\u540e
+    \u6309C \u81ea\u52a8\u751f\u6210\u7ec4\u6846","rect":{"xMin":155.2321,"yMin":1475.473,"xMax":905.2644,"yMax":1852.026}},{"name":"ctrl+alt
+    +S","rect":{"xMin":497.3295,"yMin":226.6649,"xMax":883.9931,"yMax":935.9928}}],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.03
+    _category: 
+    _comments: 
+    _translation: {x: 381, y: 130}
+    _zoomFactor: 0.2524068
+  _haltSerialization: 0
+--- !u!1 &1818402089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818402095}
+  - component: {fileID: 1818402094}
+  - component: {fileID: 1818402093}
+  - component: {fileID: 1818402092}
+  - component: {fileID: 1818402091}
+  - component: {fileID: 1818402090}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1818402090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818402089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []
+--- !u!114 &1818402091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818402089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5c3ebb24c97464da319951cafe5a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"FlowCanvas.FlowScript","nodes":[{"_position":{"x":196.5121,"y":357.9598},"$type":"FlowCanvas.Nodes.ConstructionEvent"},{"_position":{"x":191.5121,"y":465.9598},"$type":"FlowCanvas.Nodes.EnableEvent"},{"_position":{"x":197.5121,"y":588.9598},"$type":"FlowCanvas.Nodes.StartEvent"},{"updateInterval":{},"_position":{"x":199.5121,"y":719.9598},"$type":"FlowCanvas.Nodes.UpdateEvent"},{"_position":{"x":175.5121,"y":905.4558},"$type":"FlowCanvas.Nodes.LateUpdateEvent"},{"_position":{"x":187.5121,"y":813.9598},"$type":"FlowCanvas.Nodes.FixedUpdateEvent"},{"_position":{"x":206.5121,"y":1016.96},"$type":"FlowCanvas.Nodes.DisableEvent"},{"_position":{"x":1060.707,"y":364.1913},"$type":"FlowCanvas.Nodes.ExecuteInEditModeEvent"},{"_position":{"x":1180.587,"y":541.7347},"$type":"FlowCanvas.Nodes.DebugEvent"},{"eventName":{"_value":"EventName"},"target":{},"targets":{},"_position":{"x":3843.736,"y":623.6777},"$type":"FlowCanvas.Nodes.CustomEvent"},{"value":{},"_color":{"a":1.0},"_position":{"x":223.9983,"y":-34.6664},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"value":{},"_color":{"a":1.0},"_position":{"x":386.6637,"y":-25.33314},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"value":{},"_color":{"a":1.0},"_position":{"x":542.6625,"y":-31.99975},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"value":{},"_color":{"a":1.0},"_position":{"x":703.9946,"y":-17.3332},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Quaternion,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"value":{},"_color":{"a":1.0},"_position":{"x":858.66,"y":-31.99975},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Color,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_position":{"x":666.1666,"y":435.5121},"$type":"FlowCanvas.Nodes.Split"},{"_position":{"x":722.3129,"y":691.9636},"$type":"FlowCanvas.Nodes.Sequence"},{"_simplexNode":{},"_position":{"x":523.5251,"y":688.9287},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.SendEvent,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_position":{"x":622.1602,"y":596.3634},"$type":"FlowCanvas.Nodes.OwnerVariable"},{"_position":{"x":552.3568,"y":320.1849},"$type":"FlowCanvas.Nodes.Sequence"},{"_position":{"x":1242.803,"y":676.7889},"$type":"FlowCanvas.Nodes.Delay"},{"_color":{"a":1.0},"_position":{"x":1086.504,"y":790.5988},"$type":"FlowCanvas.Nodes.Dummy"},{"_simplexNode":{},"_inputPortValues":{"multiplier":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":1059.19,"y":619.1252},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.DeltaTimed,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_simplexNode":{},"_inputPortValues":{"multiplier":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":1233.698,"y":817.9132},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.DeltaTimedVector3,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_UID":"2a3c2cf1-e120-47c1-8f6e-2ff7509377e1","_position":{"x":1757.223,"y":446.1344},"$type":"FlowCanvas.Nodes.RelayValueInput`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_position":{"x":1802.747,"y":669.2017},"$type":"FlowCanvas.Nodes.RelayValueOutput`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_simplexNode":{},"_inputPortValues":{"time":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":2270.126,"y":462.8265},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.Wait,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_simplexNode":{},"_position":{"x":2394.558,"y":593.3284},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.WaitForEndOfFrame,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_position":{"x":2526.578,"y":476.4837},"$type":"FlowCanvas.Nodes.While"},{"_simplexNode":{},"_position":{"x":3025.823,"y":509.8679},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.G_FindGameObject,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_simplexNode":{},"_position":{"x":3024.306,"y":713.2081},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.G_FindChild,
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_position":{"x":2871.042,"y":567.5315},"$type":"FlowCanvas.Nodes.CustomFunctionCall"},{"_position":{"x":2902.909,"y":333.8421},"$type":"FlowCanvas.Nodes.ForEach`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_position":{"x":3584.25,"y":537.1823},"$type":"FlowCanvas.Nodes.CoroutineState"},{"_simplexNode":{},"_position":{"x":3734.479,"y":468.8964},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.Cache`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],
+    ParadoxNotion, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"connections":[],"canvasGroups":[{"name":"ctrl
+    + shift +\u9f20\u6807\u5de6\u952e\u6846\u9009  \u589e\u9009\u8282\u70b9        
+    shift +\u9f20\u6807\u5de6\u952e\u6846\u9009  \u51cf\u9009\u8282\u70b9  ","rect":{"xMin":72.74628,"yMin":1215.442,"xMax":1007.812,"yMax":1925.709}},{"name":"ctrl+alt
+    +c","rect":{"xMin":3423.007,"yMin":198.595,"xMax":4107.056,"yMax":976.4257}},{"name":"ctrl+alt
+    +W","rect":{"xMin":2091.984,"yMin":233.3315,"xMax":2683.979,"yMax":949.326}},{"name":"ctrl+alt
+    +F","rect":{"xMin":2780.74,"yMin":202.6167,"xMax":3337.354,"yMax":959.5184}},{"name":"ctrl+alt
+    +R","rect":{"xMin":1526.655,"yMin":227.9982,"xMax":2025.318,"yMax":938.6594}},{"name":"ctrl+alt
+    +D","rect":{"xMin":983.9924,"yMin":231.9982,"xMax":1425.322,"yMax":934.6594}},{"name":"ctrl+alt+A","rect":{"xMin":83.0,"yMin":233.0,"xMax":419.0,"yMax":1135.0}},{"name":"alt
+    +1 ,2,3,4,5","rect":{"xMin":123.9983,"yMin":-134.6664,"xMax":1170.66,"yMax":152.0002}},{"name":"ctrl+shift
+    +\u5de6\u952e\u6846\u9009  \u751f\u6210\u7ec4\u6846\uff0c\u6216\u8005 \u9009\u62e9\u8282\u70b9\u540e
+    \u6309C \u81ea\u52a8\u751f\u6210\u7ec4\u6846","rect":{"xMin":155.2321,"yMin":1475.473,"xMax":905.2644,"yMax":1852.026}},{"name":"ctrl+alt
+    +S","rect":{"xMin":497.3295,"yMin":226.6649,"xMax":883.9931,"yMax":935.9928}}],"localBlackboard":{"_variables":{}}}'
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 3.03
+    _category: 
+    _comments: 
+    _translation: {x: 381, y: 130}
+    _zoomFactor: 0.2524068
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 1346876185}
+  _blackboard: {fileID: 1818402090}
+--- !u!23 &1818402092
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818402089}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1818402093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818402089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1818402094
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818402089}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1818402095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818402089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -1,0 +1,77 @@
+﻿using System.Reflection;
+using ParadoxNotion;
+using ParadoxNotion.Design;
+using ParadoxNotion.Serialization;
+using UnityEngine;
+
+namespace FlowCanvas.Nodes
+{
+    [Color("3a7962")]
+    ///Wraps a ConstructorInfo into a FlowGraph node
+    public class ReflectedConstructorNodeWrapper : ReflectedMethodBaseNodeWrapper
+    {
+
+        [SerializeField]
+        private SerializedConstructorInfo _constructor;
+
+        private BaseReflectedConstructorNode reflectedConstructorNode { get; set; }
+        private ConstructorInfo constructor => _constructor;
+        protected override ISerializedMethodBaseInfo serializedMethodBase => _constructor;
+
+        public override string name {
+            get
+            {
+                if ( constructor != null ) { return string.Format("New {0} ()", constructor.DeclaringType.FriendlyName()); }
+                if ( _constructor != null ) { return _constructor.AsString().FormatError(); }
+                return "NOT SET";
+            }
+        }
+
+#if UNITY_EDITOR
+        public override string description {
+            get { return constructor != null ? DocsByReflection.GetMemberSummary(constructor.DeclaringType) : "Missing Constructor"; }
+        }
+#endif
+
+        ///Set a new ConstructorInfo to be used by ReflectedConstructorNode
+        public override void SetMethodBase(MethodBase newMethod, object instance = null) {
+            if ( newMethod is ConstructorInfo ) {
+                SetConstructor((ConstructorInfo)newMethod);
+            }
+        }
+#if UNITY_EDITOR
+        //SL--  
+        public override string NodeColor()
+        {
+            return callable ? "36495c" : "3a7962";
+        }
+#endif
+        ///Set a new ConstructorInfo to be used by ReflectedConstructorNode
+        void SetConstructor(ConstructorInfo newConstructor) {
+            _constructor = new SerializedConstructorInfo(newConstructor);
+            GatherPorts();
+
+            base.SetDefaultParameterValues(newConstructor);
+        }
+
+        protected override void RegisterPorts() {
+            if ( constructor == null ) {
+                return;
+            }
+
+            var options = new ReflectedMethodRegistrationOptions();
+            options.callable = callable;
+            options.exposeParams = exposeParams;
+            options.exposedParamsCount = exposedParamsCount;
+
+            reflectedConstructorNode = BaseReflectedConstructorNode.GetConstructorNode(constructor, options);
+            if ( reflectedConstructorNode != null ) {
+#if UNITY_EDITOR
+                //SL--  
+                customColor = ColorUtils.HexToColor(callable ? "36495c" : "3a7962");
+#endif
+                reflectedConstructorNode.RegisterPorts(this, options);
+            }
+        }
+    }
+}

@@ -25,9 +25,9 @@ MonoBehaviour:
   currentHp: 142
   currentMp: 46
   currentDefence: 5
-  currentAttack: 20
+  currentAttack: 100
   currentlevel: 3
   maxskillNumber: 0
-  attack: 100
+  attack: 150
   defence: 5
   currentExp: 0

@@ -382,7 +382,7 @@ namespace FS2.UI
 				Sprite ThirdSprite = null;
 				Sprite SecondSprite = null;
 				Sprite FirstSprite = null;
-				switch (vs[3])
+				switch (vs[2])
 				{
 					case '0':
 						ThirdSprite = GameManager.GamePrefab.FN00;
@@ -415,7 +415,7 @@ namespace FS2.UI
 						ThirdSprite = GameManager.GamePrefab.FN09;
 						break;
 				}
-				switch (vs[2])
+				switch (vs[1])
 				{
 					case '0':
 						SecondSprite = GameManager.GamePrefab.FN00;
@@ -448,7 +448,6 @@ namespace FS2.UI
 						SecondSprite = GameManager.GamePrefab.FN09;
 						break;
 				}
-
 				switch (vs[0])
 				{
 					case '0':
@@ -484,7 +483,7 @@ namespace FS2.UI
 				}
 				Third.GetComponent<Image>().sprite = ThirdSprite;
 				Second.GetComponent<Image>().sprite = SecondSprite;
-				First.GetComponent<Image>().sprite = SecondSprite;
+				First.GetComponent<Image>().sprite = FirstSprite;
 				Third.SetActive(true);
 				Second.SetActive(true);
 				First.SetActive(true);
@@ -496,9 +495,9 @@ namespace FS2.UI
         private void JumpAnim()
         {
             Vector3 target = new Vector3(this.transform.localPosition.x- 3f, this.transform.localPosition.y + 2f);
-			this.transform.DOJump(target, 2f, 1, 3f)
+			this.transform.DOJump(target, 2f, 1, ExistTime)
 				.OnComplete(() => {
-					this.Hide();
+					this.Close();
 				});
         }
 

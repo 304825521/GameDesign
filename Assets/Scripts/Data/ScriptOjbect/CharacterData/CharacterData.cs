@@ -15,6 +15,7 @@ namespace FS2.Data
 		Skill,
 		GetHurt,
 		NormalAttack,
+		Dead,
 	}
 
 	public class CharacterData : MonoBehaviour, INotifyPropertyChanged
@@ -38,6 +39,10 @@ namespace FS2.Data
         {
             switch (fsm)
             {
+				case FSM.Dead:
+					//TODO:这里是写人物死亡动作的
+					//UIDynamic.SetTrigger("GetHurt");
+					break;
 				case FSM.GetHurt:
 					UIDynamic.SetTrigger("GetHurt");
 					break;
@@ -136,8 +141,13 @@ namespace FS2.Data
 				Attribute.currentHp = value;
 				if(Attribute.currentHp <= 0)
                 {
+					//TODO:这里将状态机转换成死亡的时候
+					//fsm = FSM.GetHurt;
+				}
+				else
+				{
 					fsm = FSM.GetHurt;
-                }
+				}
 			}
 		}
 

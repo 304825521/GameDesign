@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 17058
+  m_CachedInstanceID: 17412
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -1502,7 +1502,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 430, y: 320}
   m_Transitions: []
-  m_CachedInstanceID: 17064
+  m_CachedInstanceID: 17418
 --- !u!114 &1258212754
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 300, y: 210}
   m_Transitions: []
-  m_CachedInstanceID: 17066
+  m_CachedInstanceID: 17420
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}

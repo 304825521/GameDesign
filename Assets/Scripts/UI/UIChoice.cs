@@ -62,9 +62,7 @@ namespace FS2.UI
         /// <param name="FLAG"></param>
 		public void CtrlActionPannel(bool FLAG)
         {
-			Debug.Log("123");
 			ActionPannel.SetActive(FLAG);
-
 		}
 
 	}
