@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 23258
+  m_CachedInstanceID: 19594
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -1502,7 +1502,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 430, y: 320}
   m_Transitions: []
-  m_CachedInstanceID: 23264
+  m_CachedInstanceID: 19600
 --- !u!114 &1258212754
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 300, y: 210}
   m_Transitions: []
-  m_CachedInstanceID: 23266
+  m_CachedInstanceID: 19602
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -1809,6 +1809,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1169420581, guid: b3a49550ab93c4e4bb0abe81709327ad, type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"EndGame":{"_value":3,"_name":"EndGame","_id":"3dbd73c4-88e7-448b-939e-72cf963c363f","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169420581, guid: b3a49550ab93c4e4bb0abe81709327ad, type: 3}
+      propertyPath: _serializedVariables.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169420581, guid: b3a49550ab93c4e4bb0abe81709327ad, type: 3}
+      propertyPath: _serializedVariables.Array.data[0]._json
+      value: '{"_value":3,"_name":"EndGame","_id":"3dbd73c4-88e7-448b-939e-72cf963c363f","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+      objectReference: {fileID: 0}
     - target: {fileID: 4032463917430718520, guid: b3a49550ab93c4e4bb0abe81709327ad,
         type: 3}
       propertyPath: m_RootOrder

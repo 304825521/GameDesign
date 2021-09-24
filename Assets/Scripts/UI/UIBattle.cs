@@ -11,10 +11,12 @@ namespace FS2.UI
         CtrlBattle controller;
         public UIPerson UIPerson;
         public UIChoice UIChoice;
+        public UICombat UICombat;
 
         public Action CompleteLoading;
         public Action ResetLoading;
         public Action CloseUIAfterAttack;
+        public Action PersonDead;
 
 
         public override void Show()
@@ -39,6 +41,9 @@ namespace FS2.UI
 				{
                     CloseUIAfterAttack += Cards[i].AfterFinishedAttack;
                     ResetLoading += Cards[i].StartLoading;
+                    PersonDead += UICombat.CloseBase;
+                    PersonDead += UIChoice.CloseActionPannel;
+                    
                     Cards[i].StartLoading();
                 }
 			}
@@ -51,7 +56,13 @@ namespace FS2.UI
         public string GetActionPannelName()
 		{
             return UIChoice.GetNameOpenPannel();
-        }            
+        }      
+        
+
+        public void UpdateUICard(string cardName, int currentHp)
+		{
+            UIPerson.UpdateUICard(cardName, currentHp);
+        }
 
     }
 }

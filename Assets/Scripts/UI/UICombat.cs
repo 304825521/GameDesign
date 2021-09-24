@@ -39,6 +39,11 @@ namespace FS2.UI
 
 		}
 
+		public void CloseBase()
+		{
+			Base.SetActive(false);
+		}
+
 		
 	}
 }

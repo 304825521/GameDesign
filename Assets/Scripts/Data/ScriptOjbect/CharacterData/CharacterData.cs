@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FS2.UI;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,8 @@ namespace FS2.Data
 	public class CharacterData : MonoBehaviour, INotifyPropertyChanged
 	{
 		public AttributeBase Attribute;
+
+		
 
 		public FSM fsm = FSM.Idle;
 
@@ -118,11 +121,19 @@ namespace FS2.Data
 			get { if (Attribute != null) return Attribute.currentHp; else return 0; }
 			set
             {
+				//if (CurrentHp == value) return;
 				Attribute.currentHp = value;
-				if(Attribute.currentHp <= 0)
+
+
+
+
+				if (Attribute.currentHp <= 0)	
                 {
-                    //TODO:这里将状态机转换成死亡的时候
-                    fsm = FSM.Dead;
+					//TODO:这里将状态机转换成死亡的时候
+					UIBattle BATTLE = Game.UI.Get<UIBattle>();
+					BATTLE.PersonDead?.Invoke();
+					Attribute.currentHp = 0;
+					fsm = FSM.Dead;
                 }
 
 			}

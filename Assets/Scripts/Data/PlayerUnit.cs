@@ -15,6 +15,7 @@ namespace FS2.Data
                     break;
                 case FSM.Dead:
                     UIDynamic.Play("Dead");
+                    IsDead = true;
                     break;
                 default:        
                     break;

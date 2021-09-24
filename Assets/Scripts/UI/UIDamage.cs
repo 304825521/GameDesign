@@ -494,12 +494,13 @@ namespace FS2.UI
 
         private void JumpAnim()
         {
-            Vector3 target = new Vector3(this.transform.localPosition.x- 3f, this.transform.localPosition.y + 2f);
+			Vector3 target = new Vector3(this.transform.localPosition.x - 3f, this.transform.localPosition.y + 2f);
 			this.transform.DOJump(target, 2f, 1, ExistTime)
-				.OnComplete(() => {
+				.OnComplete(() =>
+				{
 					this.Close();
 				});
-        }
+		}
 
         public void SetParent(Transform transform)
         {

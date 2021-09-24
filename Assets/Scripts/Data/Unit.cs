@@ -10,6 +10,8 @@ namespace FS2.Data
 		public string unitName;
 		//该单位是否在行动
 		private bool isAction = false;
+		//该单位是否已经死亡
+		bool isDead = false;	
 
 		public UIDynamic UIDynamic;
 
@@ -24,6 +26,7 @@ namespace FS2.Data
         public CharacterData CharacterData;
 
 		public bool IsAction { get => isAction; set => isAction = value; }
+		public bool IsDead { get => isDead; set => isDead = value; }
 
 		/// <summary>
 		/// 初始化敌人的基本属性

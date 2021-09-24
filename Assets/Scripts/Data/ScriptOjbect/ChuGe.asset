@@ -22,10 +22,10 @@ MonoBehaviour:
   strong: 42
   magicResistance: 28
   speed: 31
-  currentHp: 142
+  currentHp: 300
   currentMp: 46
   currentDefence: 5
-  currentAttack: 100
+  currentAttack: 150
   currentlevel: 3
   maxskillNumber: 0
   attack: 150

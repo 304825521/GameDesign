@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
 namespace FS2.UI
 {
 	public class UICard : UIWidget
@@ -13,11 +13,11 @@ namespace FS2.UI
 		public UIDynamic dynamic;
 		private UIChoice UIChoice;
 
-		public Text MpText;
-		public Image MpBar;
+		private Text MpText;
+		private Image MpBar;
 
-		public Text HpText;
-		public Image HpBar;
+		private Text HpText;
+		private Image HpBar;
 
 		public Text PersonName;
 		public Image HeadSprite;
@@ -25,16 +25,14 @@ namespace FS2.UI
 		private GameObject LoadingObj;
 		public GameObject Base;
 
-	
-		public void IsOn()
+		protected override void Awake()
 		{
-			//gameSetActive(value: true);
-			gameObject.SetActive(true);
-		}
+			base.Awake();
+			HpText = transform.Find("InfoBase/HPBase/HpStatus").gameObject.GetComponent<Text>();
+			MpText = transform.Find("InfoBase/MPBase/MpStatus").gameObject.GetComponent<Text>();
 
-		public void IsOff()
-		{
-			gameObject.SetActive(false);
+			HpBar = transform.Find("InfoBase/HPBase/Bar").gameObject.GetComponent<Image>();
+			MpBar = transform.Find("InfoBase/MPBase/Bar").gameObject.GetComponent<Image>();
 		}
 
 		/// <summary>
@@ -65,6 +63,21 @@ namespace FS2.UI
 			UIChoice = Game.UI.Get<UIChoice>();
 			UIChoice.CtrlActionPannel(false);
 		}
+
+		/// <summary>
+		/// 最终处理血量UI的方法
+		/// </summary>
+		/// <param name="currentHp">传进来的血量</param>
+		public void UpdateUICard(int currentHp)
+		{
+
+			HpText.text = currentHp.ToString();
+
+
+		}
+
+
+
 
 
 	}

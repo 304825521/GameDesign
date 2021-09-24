@@ -19,8 +19,15 @@ namespace FS2.UI
 			}
 		}
 
-
-
-
+		public void UpdateUICard(string cardName, int currentHp)
+		{
+			for (int i = 0; i < Cards.Count; i++)
+			{
+				if(Cards[i].cardName == cardName && Cards[i].isActiveAndEnabled)
+				{
+					Cards[i].UpdateUICard(currentHp);
+				}
+			}
+		}
 	}
 }

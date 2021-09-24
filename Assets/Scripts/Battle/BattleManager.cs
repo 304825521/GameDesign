@@ -8,9 +8,10 @@ using FS2.Grid;
 using FS2.Data;
 using System;
 using DG.Tweening;
-namespace FS2.FSM.Battle{
-    public class BattleManager : MonoSingleton<BattleManager>
-    {
+namespace FS2.FSM.Battle
+{
+	public class BattleManager : MonoSingleton<BattleManager>
+	{
 		GameObject Map;
 		GameObject GridObj;
 		GameObject BattleMenu;
@@ -25,7 +26,7 @@ namespace FS2.FSM.Battle{
 		{
 			base.Awake();
 			Map = this.gameObject.transform.Find("Map").gameObject;
-			if(Map == null)
+			if (Map == null)
 			{
 				Debug.Log("没有加载Map这个GameObject");
 			}
@@ -91,16 +92,16 @@ namespace FS2.FSM.Battle{
 			Sprite sprite = Resources.Load<Sprite>("BattleMap/1-7");
 			Map.GetComponent<SpriteRenderer>().sprite = sprite;
 
-		} 
+		}
 		#endregion
 
 		public void NormalAttackEnemy()
 		{
 			//当前只有一个敌人
-			if(EnemyList.Count == 1)
+			if (EnemyList.Count == 1)
 			{
 				//0. 关闭攻击面板
-				
+
 				//1. 寻找当前敌人的grid位置 
 				Transform m_Enemy = EnemyList[0].GetComponentInParent<Transform>();
 
@@ -110,44 +111,63 @@ namespace FS2.FSM.Battle{
 				//3. 计算攻击点
 				Vector3 attackPoint = EnemyList[0].transform.position - Player.gameObject.transform.position;
 				attackPoint.Normalize();
-				//4. 开始移动
+				//4. 确保攻击目标不在行动
+				StartCoroutine(ICheckAction(EnemyList[0]));
+				Player.IsAction = true;
+				
+				//5. 开始移动
 				UIBattle.CloseUIAfterAttack?.Invoke();
+
 				Player.transform.DOMove(EnemyList[0].transform.position - attackPoint, 0.4f)
-					.OnUpdate(()=> {
+					.OnUpdate(() =>
+					{
 						Player.UIDynamic.Play("JumpTo");
 					})
-					.OnComplete(async ()=> {
+					.OnComplete(async () =>
+					{
 						Player.UIDynamic.Play("Attack");
 						await Task.Delay(700);
 						HurtManager(Player, EnemyList[0]);
 
 						Player.transform.DOMove(origin, 0.4f)
-									.OnUpdate(() => {
+									.OnUpdate(() =>
+									{
 										Player.UIDynamic.Play("JumpBack");
 									})
-									.OnComplete(()=> {
+									.OnComplete(() =>
+									{
 										Player.UIDynamic.Play("Idle");
 										UIBattle.ResetLoading?.Invoke();
+										Player.IsAction = false;
 									})
 									;
 					});
-				
+
 			}
 		}
 
-		public void HurtManager(Unit Attacker,Unit Defender)
+		IEnumerator ICheckAction(Unit Defend)
+		{
+			yield return new WaitUntil(() => Defend.IsAction == false);
+		}
+
+		public void HurtManager(Unit Attacker, Unit Defender)
 		{
 			float damage = Attacker.CharacterData.CurrentAttack - Defender.CharacterData.CurrentDefence;
 			int realDamage = (int)UnityEngine.Random.Range(damage - 3f, damage + 3f);
-            if(realDamage <= 0) { realDamage = 1; }
-            char[] vs = Extensions.GetChars(realDamage);
+			if (realDamage <= 0) { realDamage = 1; }
+			char[] vs = Extensions.GetChars(realDamage);
 			UIDamage uIDamage = Game.UI.Open<UIDamage>();
 			uIDamage.SetDamageNumberByChars(vs);
 			uIDamage.SetParent(Defender.transform);
 			Defender.CharacterData.CurrentHp -= (int)realDamage;
+
+			//TODO:这里更改血量UI的显示(9.24-未完成)
+			UIBattle uIBattle = Game.UI.Get<UIBattle>();
+			//Debug.Log(this.GetComponent<Unit>().unitName);
+			uIBattle.UpdateUICard(Defender.GetComponent<Unit>().unitName, Defender.CharacterData.CurrentHp);
+
 			Defender.UIDynamic.Play("GetHurt");
-		
-			
 		}
 
 		public Unit GetPlayer()
@@ -156,20 +176,39 @@ namespace FS2.FSM.Battle{
 			string currentPlayerName = UIBattle.GetActionPannelName();
 			for (int i = 0; i < PlayerList.Count; i++)
 			{
-				if(PlayerList[i].unitName == currentPlayerName)
+				if (PlayerList[i].unitName == currentPlayerName)
 				{
 					return PlayerList[i];
 				}
 			}
 			return null;
 		}
+		private void CheckBattleEnd()
+		{
+			//TODO:战斗结束的逻辑(未完成)
+			if (PlayerList.Count == 0)
+			{
+				//1. 直接游戏结束
+				//2. 剧情杀
+			}
+			else
+			{
+				//1. 正常的结算
+				//2. 正常的结算后带剧情动画
+			}
+		}
 
-		#region AILogic
+		private void Update()
+		{
+			CheckBattleEnd();
+		}
+		
+		/// <summary>
+		/// 战斗结束后的分支
+		/// </summary>
+		
 
-
-
-
-		#endregion
+	
 	}
 
 }

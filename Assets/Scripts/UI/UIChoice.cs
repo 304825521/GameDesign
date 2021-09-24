@@ -65,5 +65,11 @@ namespace FS2.UI
 			ActionPannel.SetActive(FLAG);
 		}
 
+
+		public void CloseActionPannel()
+		{
+			ActionPannel.SetActive(false);
+		}
+
 	}
 }
