@@ -164,7 +164,6 @@ namespace FS2.FSM.Battle
 
 			//TODO:这里更改血量UI的显示(9.24-未完成)
 			UIBattle uIBattle = Game.UI.Get<UIBattle>();
-			//Debug.Log(this.GetComponent<Unit>().unitName);
 			uIBattle.UpdateUICard(Defender.GetComponent<Unit>().unitName, Defender.CharacterData.CurrentHp);
 
 			Defender.UIDynamic.Play("GetHurt");

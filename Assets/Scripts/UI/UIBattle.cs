@@ -16,7 +16,9 @@ namespace FS2.UI
         public Action CompleteLoading;
         public Action ResetLoading;
         public Action CloseUIAfterAttack;
-        public Action PersonDead;
+
+        private UICard CurrentCard;
+    
 
 
         public override void Show()
@@ -41,9 +43,8 @@ namespace FS2.UI
 				{
                     CloseUIAfterAttack += Cards[i].AfterFinishedAttack;
                     ResetLoading += Cards[i].StartLoading;
-                    PersonDead += UICombat.CloseBase;
-                    PersonDead += UIChoice.CloseActionPannel;
-                    
+                    CurrentCard = Cards[i];
+
                     Cards[i].StartLoading();
                 }
 			}
@@ -62,6 +63,12 @@ namespace FS2.UI
         public void UpdateUICard(string cardName, int currentHp)
 		{
             UIPerson.UpdateUICard(cardName, currentHp);
+        }
+
+        public void AfterDead()
+        {
+            UIChoice.CloseActionPannel();
+            CurrentCard.Base.SetActive(false);
         }
 
     }

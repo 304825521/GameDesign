@@ -19,6 +19,8 @@ namespace FS2.UI
 		private Text HpText;
 		private Image HpBar;
 
+		public Image wwww;
+
 		public Text PersonName;
 		public Image HeadSprite;
 
@@ -33,6 +35,8 @@ namespace FS2.UI
 
 			HpBar = transform.Find("InfoBase/HPBase/Bar").gameObject.GetComponent<Image>();
 			MpBar = transform.Find("InfoBase/MPBase/Bar").gameObject.GetComponent<Image>();
+
+			MpBar.do
 		}
 
 		/// <summary>
@@ -67,12 +71,14 @@ namespace FS2.UI
 		/// <summary>
 		/// 最终处理血量UI的方法
 		/// </summary>
+        /// 
 		/// <param name="currentHp">传进来的血量</param>
 		public void UpdateUICard(int currentHp)
 		{
 
 			HpText.text = currentHp.ToString();
-
+			HpText.do
+			//float rate = currentHp / this.GetComponent<>
 
 		}
 

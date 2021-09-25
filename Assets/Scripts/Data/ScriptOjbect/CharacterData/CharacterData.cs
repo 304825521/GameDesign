@@ -131,7 +131,8 @@ namespace FS2.Data
                 {
 					//TODO:这里将状态机转换成死亡的时候
 					UIBattle BATTLE = Game.UI.Get<UIBattle>();
-					BATTLE.PersonDead?.Invoke();
+					//TODO:需要修改，简单的关闭当前的ActionPannel
+					BATTLE.AfterDead();
 					Attribute.currentHp = 0;
 					fsm = FSM.Dead;
                 }

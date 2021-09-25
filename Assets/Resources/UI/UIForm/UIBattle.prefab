@@ -2752,6 +2752,7 @@ MonoBehaviour:
   depth: 2
   UIPerson: {fileID: 4736420845680580784}
   UIChoice: {fileID: 437505212}
+  UICombat: {fileID: 0}
 --- !u!1 &7851793180208586435
 GameObject:
   m_ObjectHideFlags: 0
